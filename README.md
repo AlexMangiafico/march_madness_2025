@@ -116,6 +116,8 @@ The `predict.py` script is responsible for using trained models to make predicti
 
 The `oddstrader_comparison.py` script compares the results of the simulation against actual betting odds data to evaluate how well the model predictions match up with real-world odds.
 
+DISCLAIMER: This comparison is purely for comparing the model's performance to outside predictions. This project as a whole is not advice for sports betting and has not been shown to outperform public markets.
+
 **Key Functions**:
 - Fetch and process betting odds data from external sources.
 - Compare model predictions with betting odds.
