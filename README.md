@@ -7,17 +7,17 @@ This project provides a set of Python scripts to simulate and analyze tournament
 The project is organized as follows:
 
 - **src/**: Contains all the source code for the project, including the core scripts for training, evaluating, and running simulations.
-  - [`backtest.py`](#backtest): Backtest the simulation results.
-  - [`data_loader.py`](#data-loader): Loads and preprocesses the input data.
-  - [`main.py`](#main): Main script to execute the simulation.
-  - [`metrics.py`](#metrics): Evaluation metrics for model performance.
-  - [`model.py`](#model): Model definitions and training logic.
-  - [`oddstrader_comparison.py`](#oddstrader-comparison): Compares model predictions with betting odds.
-  - [`predict.py`](#predict): Makes predictions based on the trained model.
-  - [`ratings.py`](#ratings): Computes team or player ratings based on performance.
-  - [`simulate.py`](#simulate): Runs simulations of tournament outcomes.
-  - [`train.py`](#train): Trains the model on the input data.
-  - [`visualize.py`](#visualize): Generates plots and visualizations.
+  - [`backtest`](#backtest): Backtest the simulation results.
+  - [`data_loader`](#data-loader): Loads and preprocesses the input data.
+  - [`main`](#main): Main script to execute the simulation.
+  - [`metrics`](#metrics): Evaluation metrics for model performance.
+  - [`model`](#model): Model definitions and training logic.
+  - [`oddstrader_comparison`](#oddstrader-comparison): Compares model predictions with betting odds.
+  - [`predict`](#predict): Makes predictions based on the trained model.
+  - [`ratings`](#ratings): Computes team or player ratings based on performance.
+  - [`simulate`](#simulate): Runs simulations of tournament outcomes.
+  - [`train`](#train): Trains the model on the input data.
+  - [`visualize`](#visualize): Generates plots and visualizations.
 - **stored_csvs/**: Stores CSV files with the results of predictions made during the simulation (e.g., predictions for tournament outcomes).
 - **models/**: Stores the trained machine learning models used to make predictions.
 - **kaggle_data/**: Contains raw input data required for the simulation, including tournament data and player statistics.
