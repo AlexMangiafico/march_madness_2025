@@ -7,7 +7,6 @@ This project provides a set of Python scripts to simulate and analyze tournament
 - [`Project Structure`](#project-structure)
 - [`File Descriptions`](#file-descriptions)
 - [`Usage and Contributing`](#usage-and-contributing)
-- [`Example Output`](#example-output)
 - [`Future Improvements`](#future-improvements)
 
 ## Project Structure
@@ -155,6 +154,20 @@ The `visualize.py` script generates visualizations of the tournament data and si
 - Generate tree diagrams to visualize tournament brackets and team progress.
 - Customize visualizations to improve readability and understanding.
 
+**Output**
+
+![Men Heatmap](images/heatmap_Men_2025.png)
+*Description*: A heatmap representing the probability of each team advancing through different tournament rounds.
+
+![Women Heatmap](images/heatmap_Women_2025.png)
+*Description*: A heatmap representing the probability of each team advancing through different tournament rounds.
+
+![Men Probabilistic Bracket](images/bracket_Men_2025.png)
+*Description*: A bracket representing the probability of each team advancing through different tournament rounds.
+
+![Women Probabilistic Bracket](images/bracket_Women_2025.png)
+*Description*: A bracket representing the probability of each team advancing through different tournament rounds.
+
 ---
 
 ## Usage and Contributing
@@ -173,21 +186,8 @@ The `visualize.py` script generates visualizations of the tournament data and si
    python src/main.py
    ```  
 
-## Example Output  
-![Model Accuracy](images/heatmap_Men_2025.png)
-*Description*: A graph showing the accuracy of the model across different validation sets or epochs.
-
-![Betting Odds vs Model Predictions](path_to_betting_odds_comparison.png)
-*Description*: A comparison between model predictions and actual betting odds for tournament outcomes.
-
-![Tournament Simulation Heatmap](path_to_simulation_heatmap.png)
-*Description*: A heatmap representing the probability of each team advancing through different tournament rounds.
-
-![Precision-Recall Curve](path_to_precision_recall_curve.png)
-*Description*: A graph showing the trade-off between precision and recall for the trained model.
-
-
 ## Future Improvements  
-- **More Advanced Models** (e.g., machine learning approaches)  
+- **More Advanced Models**
 - **Interactive Visualizations**  
-- **Automated Data Updates**  
+- **Automated Data Updates**
+- **Mid-Tournament Ratings Updates**
