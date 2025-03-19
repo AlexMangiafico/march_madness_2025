@@ -1,0 +1,741 @@
+digraph {
+	graph [rankdir=LR]
+	node [fillcolor=lightblue shape=box style=filled]
+	R0W01 [label="R0W01
+Duke: 100.00%" fillcolor=lightyellow style=filled]
+	R0W02 [label="R0W02
+Alabama: 100.00%" fillcolor=lightyellow style=filled]
+	R0W03 [label="R0W03
+Wisconsin: 100.00%" fillcolor=lightyellow style=filled]
+	R0W04 [label="R0W04
+Arizona: 100.00%" fillcolor=lightyellow style=filled]
+	R0W05 [label="R0W05
+Oregon: 100.00%" fillcolor=lightyellow style=filled]
+	R0W06 [label="R0W06
+BYU: 100.00%" fillcolor=lightyellow style=filled]
+	R0W07 [label="R0W07
+St Mary's CA: 100.00%" fillcolor=lightyellow style=filled]
+	R0W08 [label="R0W08
+Mississippi St: 100.00%" fillcolor=lightyellow style=filled]
+	R0W09 [label="R0W09
+Baylor: 100.00%" fillcolor=lightyellow style=filled]
+	R0W10 [label="R0W10
+Vanderbilt: 100.00%" fillcolor=lightyellow style=filled]
+	R0W11 [label="R0W11
+VCU: 100.00%" fillcolor=lightyellow style=filled]
+	R0W12 [label="R0W12
+Liberty: 100.00%" fillcolor=lightyellow style=filled]
+	R0W13 [label="R0W13
+Akron: 100.00%" fillcolor=lightyellow style=filled]
+	R0W14 [label="R0W14
+Montana: 100.00%" fillcolor=lightyellow style=filled]
+	R0W15 [label="R0W15
+Robert Morris: 100.00%" fillcolor=lightyellow style=filled]
+	R0W16 [label="R0W16
+American Univ: 54.25%
+Mt St Mary's: 45.75%" fillcolor=lightyellow style=filled]
+	W16a -> R0W16 [color=blue style=solid]
+	W16b -> R0W16 [color=red style=solid]
+	R0X01 [label="R0X01
+Houston: 100.00%" fillcolor=lightyellow style=filled]
+	R0X02 [label="R0X02
+Tennessee: 100.00%" fillcolor=lightyellow style=filled]
+	R0X03 [label="R0X03
+Kentucky: 100.00%" fillcolor=lightyellow style=filled]
+	R0X04 [label="R0X04
+Purdue: 100.00%" fillcolor=lightyellow style=filled]
+	R0X05 [label="R0X05
+Clemson: 100.00%" fillcolor=lightyellow style=filled]
+	R0X06 [label="R0X06
+Illinois: 100.00%" fillcolor=lightyellow style=filled]
+	R0X07 [label="R0X07
+UCLA: 100.00%" fillcolor=lightyellow style=filled]
+	R0X08 [label="R0X08
+Gonzaga: 100.00%" fillcolor=lightyellow style=filled]
+	R0X09 [label="R0X09
+Georgia: 100.00%" fillcolor=lightyellow style=filled]
+	R0X10 [label="R0X10
+Utah St: 100.00%" fillcolor=lightyellow style=filled]
+	R0X11 [label="R0X11
+Texas: 50.49%
+Xavier: 49.51%" fillcolor=lightyellow style=filled]
+	X11a -> R0X11 [color=blue style=solid]
+	X11b -> R0X11 [color=red style=solid]
+	R0X12 [label="R0X12
+McNeese St: 100.00%" fillcolor=lightyellow style=filled]
+	R0X13 [label="R0X13
+High Point: 100.00%" fillcolor=lightyellow style=filled]
+	R0X14 [label="R0X14
+Troy: 100.00%" fillcolor=lightyellow style=filled]
+	R0X15 [label="R0X15
+Wofford: 100.00%" fillcolor=lightyellow style=filled]
+	R0X16 [label="R0X16
+SIUE: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y01 [label="R0Y01
+Auburn: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y02 [label="R0Y02
+Michigan St: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y03 [label="R0Y03
+Iowa St: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y04 [label="R0Y04
+Texas A&M: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y05 [label="R0Y05
+Michigan: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y06 [label="R0Y06
+Mississippi: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y07 [label="R0Y07
+Marquette: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y08 [label="R0Y08
+Louisville: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y09 [label="R0Y09
+Creighton: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y10 [label="R0Y10
+New Mexico: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y11 [label="R0Y11
+North Carolina: 61.48%
+San Diego St: 38.52%" fillcolor=lightyellow style=filled]
+	Y11a -> R0Y11 [color=blue style=solid]
+	Y11b -> R0Y11 [color=red style=solid]
+	R0Y12 [label="R0Y12
+UC San Diego: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y13 [label="R0Y13
+Yale: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y14 [label="R0Y14
+Lipscomb: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y15 [label="R0Y15
+Bryant: 100.00%" fillcolor=lightyellow style=filled]
+	R0Y16 [label="R0Y16
+Alabama St: 55.36%
+St Francis PA: 44.64%" fillcolor=lightyellow style=filled]
+	Y16a -> R0Y16 [color=blue style=solid]
+	Y16b -> R0Y16 [color=red style=solid]
+	R0Z01 [label="R0Z01
+Florida: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z02 [label="R0Z02
+St John's: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z03 [label="R0Z03
+Texas Tech: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z04 [label="R0Z04
+Maryland: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z05 [label="R0Z05
+Memphis: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z06 [label="R0Z06
+Missouri: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z07 [label="R0Z07
+Kansas: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z08 [label="R0Z08
+Connecticut: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z09 [label="R0Z09
+Oklahoma: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z10 [label="R0Z10
+Arkansas: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z11 [label="R0Z11
+Drake: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z12 [label="R0Z12
+Colorado St: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z13 [label="R0Z13
+Grand Canyon: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z14 [label="R0Z14
+UNC Wilmington: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z15 [label="R0Z15
+NE Omaha: 100.00%" fillcolor=lightyellow style=filled]
+	R0Z16 [label="R0Z16
+Norfolk St: 100.00%" fillcolor=lightyellow style=filled]
+	R1W1 [label="R1W1
+Duke: 99.61%
+American Univ: 0.25%
+Mt St Mary's: 0.14%" fillcolor=lightyellow style=filled]
+	R0W01 -> R1W1 [color=blue style=solid]
+	R0W16 -> R1W1 [color=red style=solid]
+	R1W2 [label="R1W2
+Alabama: 98.65%
+Robert Morris: 1.35%" fillcolor=lightyellow style=filled]
+	R0W02 -> R1W2 [color=blue style=solid]
+	R0W15 -> R1W2 [color=red style=solid]
+	R1W3 [label="R1W3
+Wisconsin: 97.42%
+Montana: 2.58%" fillcolor=lightyellow style=filled]
+	R0W03 -> R1W3 [color=blue style=solid]
+	R0W14 -> R1W3 [color=red style=solid]
+	R1W4 [label="R1W4
+Arizona: 96.93%
+Akron: 3.07%" fillcolor=lightyellow style=filled]
+	R0W04 -> R1W4 [color=blue style=solid]
+	R0W13 -> R1W4 [color=red style=solid]
+	R1W5 [label="R1W5
+Oregon: 74.63%
+Liberty: 25.37%" fillcolor=lightyellow style=filled]
+	R0W05 -> R1W5 [color=blue style=solid]
+	R0W12 -> R1W5 [color=red style=solid]
+	R1W6 [label="R1W6
+BYU: 54.90%
+VCU: 45.10%" fillcolor=lightyellow style=filled]
+	R0W06 -> R1W6 [color=blue style=solid]
+	R0W11 -> R1W6 [color=red style=solid]
+	R1W7 [label="R1W7
+St Mary's CA: 66.87%
+Vanderbilt: 33.13%" fillcolor=lightyellow style=filled]
+	R0W07 -> R1W7 [color=blue style=solid]
+	R0W10 -> R1W7 [color=red style=solid]
+	R1W8 [label="R1W8
+Baylor: 57.66%
+Mississippi St: 42.34%" fillcolor=lightyellow style=filled]
+	R0W08 -> R1W8 [color=blue style=solid]
+	R0W09 -> R1W8 [color=red style=solid]
+	R1X1 [label="R1X1
+Houston: 99.13%
+SIUE: 0.87%" fillcolor=lightyellow style=filled]
+	R0X01 -> R1X1 [color=blue style=solid]
+	R0X16 -> R1X1 [color=red style=solid]
+	R1X2 [label="R1X2
+Tennessee: 97.48%
+Wofford: 2.52%" fillcolor=lightyellow style=filled]
+	R0X02 -> R1X2 [color=blue style=solid]
+	R0X15 -> R1X2 [color=red style=solid]
+	R1X3 [label="R1X3
+Kentucky: 92.66%
+Troy: 7.34%" fillcolor=lightyellow style=filled]
+	R0X03 -> R1X3 [color=blue style=solid]
+	R0X14 -> R1X3 [color=red style=solid]
+	R1X4 [label="R1X4
+Purdue: 90.93%
+High Point: 9.07%" fillcolor=lightyellow style=filled]
+	R0X04 -> R1X4 [color=blue style=solid]
+	R0X13 -> R1X4 [color=red style=solid]
+	R1X5 [label="R1X5
+Clemson: 77.91%
+McNeese St: 22.09%" fillcolor=lightyellow style=filled]
+	R0X05 -> R1X5 [color=blue style=solid]
+	R0X12 -> R1X5 [color=red style=solid]
+	R1X6 [label="R1X6
+Illinois: 67.09%
+Texas: 16.82%
+Xavier: 16.09%" fillcolor=lightyellow style=filled]
+	R0X06 -> R1X6 [color=blue style=solid]
+	R0X11 -> R1X6 [color=red style=solid]
+	R1X7 [label="R1X7
+UCLA: 72.31%
+Utah St: 27.69%" fillcolor=lightyellow style=filled]
+	R0X07 -> R1X7 [color=blue style=solid]
+	R0X10 -> R1X7 [color=red style=solid]
+	R1X8 [label="R1X8
+Gonzaga: 72.25%
+Georgia: 27.75%" fillcolor=lightyellow style=filled]
+	R0X08 -> R1X8 [color=blue style=solid]
+	R0X09 -> R1X8 [color=red style=solid]
+	R1Y1 [label="R1Y1
+Auburn: 99.87%
+Alabama St: 0.08%
+St Francis PA: 0.05%" fillcolor=lightyellow style=filled]
+	R0Y01 -> R1Y1 [color=blue style=solid]
+	R0Y16 -> R1Y1 [color=red style=solid]
+	R1Y2 [label="R1Y2
+Michigan St: 97.54%
+Bryant: 2.46%" fillcolor=lightyellow style=filled]
+	R0Y02 -> R1Y2 [color=blue style=solid]
+	R0Y15 -> R1Y2 [color=red style=solid]
+	R1Y3 [label="R1Y3
+Iowa St: 93.24%
+Lipscomb: 6.76%" fillcolor=lightyellow style=filled]
+	R0Y03 -> R1Y3 [color=blue style=solid]
+	R0Y14 -> R1Y3 [color=red style=solid]
+	R1Y4 [label="R1Y4
+Texas A&M: 83.33%
+Yale: 16.67%" fillcolor=lightyellow style=filled]
+	R0Y04 -> R1Y4 [color=blue style=solid]
+	R0Y13 -> R1Y4 [color=red style=solid]
+	R1Y5 [label="R1Y5
+Michigan: 62.91%
+UC San Diego: 37.09%" fillcolor=lightyellow style=filled]
+	R0Y05 -> R1Y5 [color=blue style=solid]
+	R0Y12 -> R1Y5 [color=red style=solid]
+	R1Y6 [label="R1Y6
+Mississippi: 57.88%
+North Carolina: 28.30%
+San Diego St: 13.82%" fillcolor=lightyellow style=filled]
+	R0Y06 -> R1Y6 [color=blue style=solid]
+	R0Y11 -> R1Y6 [color=red style=solid]
+	R1Y7 [label="R1Y7
+Marquette: 63.02%
+New Mexico: 36.98%" fillcolor=lightyellow style=filled]
+	R0Y07 -> R1Y7 [color=blue style=solid]
+	R0Y10 -> R1Y7 [color=red style=solid]
+	R1Y8 [label="R1Y8
+Louisville: 62.02%
+Creighton: 37.98%" fillcolor=lightyellow style=filled]
+	R0Y08 -> R1Y8 [color=blue style=solid]
+	R0Y09 -> R1Y8 [color=red style=solid]
+	R1Z1 [label="R1Z1
+Florida: 99.52%
+Norfolk St: 0.48%" fillcolor=lightyellow style=filled]
+	R0Z01 -> R1Z1 [color=blue style=solid]
+	R0Z16 -> R1Z1 [color=red style=solid]
+	R1Z2 [label="R1Z2
+St John's: 97.68%
+NE Omaha: 2.32%" fillcolor=lightyellow style=filled]
+	R0Z02 -> R1Z2 [color=blue style=solid]
+	R0Z15 -> R1Z2 [color=red style=solid]
+	R1Z3 [label="R1Z3
+Texas Tech: 95.32%
+UNC Wilmington: 4.68%" fillcolor=lightyellow style=filled]
+	R0Z03 -> R1Z3 [color=blue style=solid]
+	R0Z14 -> R1Z3 [color=red style=solid]
+	R1Z4 [label="R1Z4
+Maryland: 94.53%
+Grand Canyon: 5.47%" fillcolor=lightyellow style=filled]
+	R0Z04 -> R1Z4 [color=blue style=solid]
+	R0Z13 -> R1Z4 [color=red style=solid]
+	R1Z5 [label="R1Z5
+Colorado St: 61.19%
+Memphis: 38.81%" fillcolor=lightyellow style=filled]
+	R0Z05 -> R1Z5 [color=blue style=solid]
+	R0Z12 -> R1Z5 [color=red style=solid]
+	R1Z6 [label="R1Z6
+Missouri: 77.83%
+Drake: 22.17%" fillcolor=lightyellow style=filled]
+	R0Z06 -> R1Z6 [color=blue style=solid]
+	R0Z11 -> R1Z6 [color=red style=solid]
+	R1Z7 [label="R1Z7
+Kansas: 62.71%
+Arkansas: 37.29%" fillcolor=lightyellow style=filled]
+	R0Z07 -> R1Z7 [color=blue style=solid]
+	R0Z10 -> R1Z7 [color=red style=solid]
+	R1Z8 [label="R1Z8
+Connecticut: 58.77%
+Oklahoma: 41.23%" fillcolor=lightyellow style=filled]
+	R0Z08 -> R1Z8 [color=blue style=solid]
+	R0Z09 -> R1Z8 [color=red style=solid]
+	R2W1 [label="R2W1
+Duke: 89.95%
+Baylor: 6.60%
+Mississippi St: 3.43%
+American Univ: 0.01%
+Mt St Mary's: 0.00%" fillcolor=lightyellow style=filled]
+	R1W1 -> R2W1 [color=blue style=solid]
+	R1W8 -> R2W1 [color=red style=solid]
+	R2W2 [label="R2W2
+Alabama: 75.52%
+St Mary's CA: 20.07%
+Vanderbilt: 4.29%
+Robert Morris: 0.12%" fillcolor=lightyellow style=filled]
+	R1W2 -> R2W2 [color=blue style=solid]
+	R1W7 -> R2W2 [color=red style=solid]
+	R2W3 [label="R2W3
+Wisconsin: 58.32%
+BYU: 23.87%
+VCU: 17.70%
+Montana: 0.11%" fillcolor=lightyellow style=filled]
+	R1W3 -> R2W3 [color=blue style=solid]
+	R1W6 -> R2W3 [color=red style=solid]
+	R2W4 [label="R2W4
+Arizona: 73.35%
+Oregon: 22.82%
+Liberty: 3.41%
+Akron: 0.41%" fillcolor=lightyellow style=filled]
+	R1W4 -> R2W4 [color=blue style=solid]
+	R1W5 -> R2W4 [color=red style=solid]
+	R2X1 [label="R2X1
+Houston: 78.21%
+Gonzaga: 17.81%
+Georgia: 3.96%
+SIUE: 0.02%" fillcolor=lightyellow style=filled]
+	R1X1 -> R2X1 [color=blue style=solid]
+	R1X8 -> R2X1 [color=red style=solid]
+	R2X2 [label="R2X2
+Tennessee: 73.11%
+UCLA: 22.57%
+Utah St: 4.15%
+Wofford: 0.17%" fillcolor=lightyellow style=filled]
+	R1X2 -> R2X2 [color=blue style=solid]
+	R1X7 -> R2X2 [color=red style=solid]
+	R2X3 [label="R2X3
+Kentucky: 55.25%
+Illinois: 32.92%
+Texas: 5.69%
+Xavier: 5.32%
+Troy: 0.83%" fillcolor=lightyellow style=filled]
+	R1X3 -> R2X3 [color=blue style=solid]
+	R1X6 -> R2X3 [color=red style=solid]
+	R2X4 [label="R2X4
+Purdue: 55.45%
+Clemson: 38.13%
+McNeese St: 4.88%
+High Point: 1.54%" fillcolor=lightyellow style=filled]
+	R1X4 -> R2X4 [color=blue style=solid]
+	R1X5 -> R2X4 [color=red style=solid]
+	R2Y1 [label="R2Y1
+Auburn: 86.18%
+Louisville: 9.83%
+Creighton: 3.99%
+Alabama St: 0.00%
+St Francis PA: 0.00%" fillcolor=lightyellow style=filled]
+	R1Y1 -> R2Y1 [color=blue style=solid]
+	R1Y8 -> R2Y1 [color=red style=solid]
+	R2Y2 [label="R2Y2
+Michigan St: 71.73%
+Marquette: 20.04%
+New Mexico: 8.08%
+Bryant: 0.15%" fillcolor=lightyellow style=filled]
+	R1Y2 -> R2Y2 [color=blue style=solid]
+	R1Y7 -> R2Y2 [color=red style=solid]
+	R2Y3 [label="R2Y3
+Iowa St: 68.30%
+Mississippi: 19.10%
+North Carolina: 8.25%
+San Diego St: 3.27%
+Lipscomb: 1.09%" fillcolor=lightyellow style=filled]
+	R1Y3 -> R2Y3 [color=blue style=solid]
+	R1Y6 -> R2Y3 [color=red style=solid]
+	R2Y4 [label="R2Y4
+Texas A&M: 44.42%
+Michigan: 35.87%
+UC San Diego: 16.63%
+Yale: 3.08%" fillcolor=lightyellow style=filled]
+	R1Y4 -> R2Y4 [color=blue style=solid]
+	R1Y5 -> R2Y4 [color=red style=solid]
+	R2Z1 [label="R2Z1
+Florida: 86.68%
+Connecticut: 9.03%
+Oklahoma: 4.28%
+Norfolk St: 0.02%" fillcolor=lightyellow style=filled]
+	R1Z1 -> R2Z1 [color=blue style=solid]
+	R1Z8 -> R2Z1 [color=red style=solid]
+	R2Z2 [label="R2Z2
+St John's: 63.94%
+Kansas: 25.09%
+Arkansas: 10.86%
+NE Omaha: 0.11%" fillcolor=lightyellow style=filled]
+	R1Z2 -> R2Z2 [color=blue style=solid]
+	R1Z7 -> R2Z2 [color=red style=solid]
+	R2Z3 [label="R2Z3
+Texas Tech: 62.94%
+Missouri: 32.10%
+Drake: 4.47%
+UNC Wilmington: 0.50%" fillcolor=lightyellow style=filled]
+	R1Z3 -> R2Z3 [color=blue style=solid]
+	R1Z6 -> R2Z3 [color=red style=solid]
+	R2Z4 [label="R2Z4
+Maryland: 77.71%
+Colorado St: 14.69%
+Memphis: 6.37%
+Grand Canyon: 1.23%" fillcolor=lightyellow style=filled]
+	R1Z4 -> R2Z4 [color=blue style=solid]
+	R1Z5 -> R2Z4 [color=red style=solid]
+	R3W1 [label="R3W1
+Duke: 76.32%
+Arizona: 16.75%
+Oregon: 2.99%
+Baylor: 2.63%
+Mississippi St: 1.12%
+Liberty: 0.19%
+Akron: 0.01%
+American Univ: 0.00%
+Mt St Mary's: 0.00%" fillcolor=lightyellow style=filled]
+	R2W1 -> R3W1 [color=blue style=solid]
+	R2W4 -> R3W1 [color=red style=solid]
+	R3W2 [label="R3W2
+Alabama: 53.42%
+Wisconsin: 23.03%
+St Mary's CA: 9.56%
+BYU: 7.56%
+VCU: 5.19%
+Vanderbilt: 1.23%
+Robert Morris: 0.01%
+Montana: 0.00%" fillcolor=lightyellow style=filled]
+	R2W2 -> R3W2 [color=blue style=solid]
+	R2W3 -> R3W2 [color=red style=solid]
+	R3X1 [label="R3X1
+Houston: 64.34%
+Purdue: 13.68%
+Gonzaga: 11.39%
+Clemson: 8.49%
+Georgia: 1.64%
+McNeese St: 0.39%
+High Point: 0.06%
+SIUE: 0.00%" fillcolor=lightyellow style=filled]
+	R2X1 -> R3X1 [color=blue style=solid]
+	R2X4 -> R3X1 [color=red style=solid]
+	R3X2 [label="R3X2
+Tennessee: 53.31%
+Kentucky: 20.69%
+UCLA: 11.20%
+Illinois: 11.07%
+Texas: 1.36%
+Xavier: 1.24%
+Utah St: 1.06%
+Troy: 0.06%
+Wofford: 0.01%" fillcolor=lightyellow style=filled]
+	R2X2 -> R3X2 [color=blue style=solid]
+	R2X3 -> R3X2 [color=red style=solid]
+	R3Y1 [label="R3Y1
+Auburn: 73.33%
+Texas A&M: 9.59%
+Michigan: 7.56%
+Louisville: 5.20%
+UC San Diego: 2.51%
+Creighton: 1.65%
+Yale: 0.15%
+Alabama St: 0.00%
+St Francis PA: 0.00%" fillcolor=lightyellow style=filled]
+	R2Y1 -> R3Y1 [color=blue style=solid]
+	R2Y4 -> R3Y1 [color=red style=solid]
+	R3Y2 [label="R3Y2
+Michigan St: 42.12%
+Iowa St: 37.69%
+Marquette: 7.77%
+Mississippi: 6.70%
+North Carolina: 2.57%
+New Mexico: 2.22%
+San Diego St: 0.82%
+Lipscomb: 0.10%
+Bryant: 0.01%" fillcolor=lightyellow style=filled]
+	R2Y2 -> R3Y2 [color=blue style=solid]
+	R2Y3 -> R3Y2 [color=red style=solid]
+	R3Z1 [label="R3Z1
+Florida: 63.55%
+Maryland: 29.14%
+Connecticut: 3.28%
+Colorado St: 2.16%
+Oklahoma: 1.22%
+Memphis: 0.60%
+Grand Canyon: 0.05%
+Norfolk St: 0.00%" fillcolor=lightyellow style=filled]
+	R2Z1 -> R3Z1 [color=blue style=solid]
+	R2Z4 -> R3Z1 [color=red style=solid]
+	R3Z2 [label="R3Z2
+Texas Tech: 36.19%
+St John's: 33.87%
+Missouri: 15.23%
+Kansas: 10.39%
+Arkansas: 3.24%
+Drake: 1.03%
+UNC Wilmington: 0.04%
+NE Omaha: 0.00%" fillcolor=lightyellow style=filled]
+	R2Z2 -> R3Z2 [color=blue style=solid]
+	R2Z3 -> R3Z2 [color=red style=solid]
+	R4W1 [label="R4W1
+Duke: 62.87%
+Alabama: 16.99%
+Arizona: 8.30%
+Wisconsin: 5.31%
+St Mary's CA: 2.09%
+BYU: 1.35%
+VCU: 0.89%
+Baylor: 0.88%
+Oregon: 0.87%
+Mississippi St: 0.30%
+Vanderbilt: 0.12%
+Liberty: 0.02%
+Akron: 0.00%
+Robert Morris: 0.00%
+Montana: 0.00%
+American Univ: 0.00%
+Mt St Mary's: 0.00%" fillcolor=lightyellow style=filled]
+	R3W1 -> R4W1 [color=blue style=solid]
+	R3W2 -> R4W1 [color=red style=solid]
+	R4X1 [label="R4X1
+Houston: 46.93%
+Tennessee: 25.33%
+Kentucky: 6.03%
+Gonzaga: 5.67%
+Purdue: 5.62%
+UCLA: 3.21%
+Clemson: 3.13%
+Illinois: 2.91%
+Georgia: 0.49%
+Texas: 0.24%
+Xavier: 0.22%
+Utah St: 0.14%
+McNeese St: 0.06%
+High Point: 0.00%
+Troy: 0.00%
+Wofford: 0.00%
+SIUE: 0.00%" fillcolor=lightyellow style=filled]
+	R3X1 -> R4X1 [color=blue style=solid]
+	R3X2 -> R4X1 [color=red style=solid]
+	R4Y1 [label="R4Y1
+Auburn: 55.47%
+Michigan St: 16.37%
+Iowa St: 14.08%
+Texas A&M: 3.69%
+Michigan: 2.97%
+Louisville: 2.01%
+Marquette: 1.80%
+Mississippi: 1.46%
+UC San Diego: 0.71%
+North Carolina: 0.48%
+Creighton: 0.47%
+New Mexico: 0.34%
+San Diego St: 0.13%
+Yale: 0.02%
+Lipscomb: 0.01%
+Bryant: 0.00%
+Alabama St: 0.00%
+St Francis PA: 0.00%" fillcolor=lightyellow style=filled]
+	R3Y1 -> R4Y1 [color=blue style=solid]
+	R3Y2 -> R4Y1 [color=red style=solid]
+	R4Z1 [label="R4Z1
+Florida: 47.10%
+Maryland: 16.67%
+Texas Tech: 13.87%
+St John's: 12.38%
+Missouri: 4.33%
+Kansas: 2.81%
+Connecticut: 1.12%
+Arkansas: 0.60%
+Colorado St: 0.56%
+Oklahoma: 0.32%
+Drake: 0.14%
+Memphis: 0.10%
+Grand Canyon: 0.00%
+UNC Wilmington: 0.00%
+NE Omaha: 0.00%
+Norfolk St: 0.00%" fillcolor=lightyellow style=filled]
+	R3Z1 -> R4Z1 [color=blue style=solid]
+	R3Z2 -> R4Z1 [color=red style=solid]
+	R5WX [label="R5WX
+Duke: 41.92%
+Houston: 26.90%
+Tennessee: 10.88%
+Alabama: 7.27%
+Arizona: 3.01%
+Gonzaga: 1.73%
+Wisconsin: 1.66%
+Kentucky: 1.41%
+Purdue: 1.37%
+UCLA: 0.75%
+Clemson: 0.68%
+St Mary's CA: 0.61%
+Illinois: 0.61%
+BYU: 0.34%
+Baylor: 0.22%
+VCU: 0.21%
+Oregon: 0.19%
+Georgia: 0.08%
+Mississippi St: 0.06%
+Texas: 0.03%
+Xavier: 0.03%
+Vanderbilt: 0.02%
+Utah St: 0.01%
+McNeese St: 0.00%
+Liberty: 0.00%
+High Point: 0.00%
+Troy: 0.00%
+Akron: 0.00%
+Wofford: 0.00%
+Robert Morris: 0.00%
+Montana: 0.00%
+SIUE: 0.00%
+American Univ: 0.00%
+Mt St Mary's: 0.00%" fillcolor=lightyellow style=filled]
+	R4W1 -> R5WX [color=blue style=solid]
+	R4X1 -> R5WX [color=red style=solid]
+	R5YZ [label="R5YZ
+Auburn: 35.74%
+Florida: 27.86%
+Maryland: 7.06%
+Michigan St: 6.95%
+Iowa St: 5.75%
+Texas Tech: 5.58%
+St John's: 4.78%
+Missouri: 1.33%
+Texas A&M: 1.02%
+Michigan: 0.82%
+Kansas: 0.81%
+Louisville: 0.55%
+Marquette: 0.44%
+Mississippi: 0.34%
+Connecticut: 0.27%
+UC San Diego: 0.14%
+Arkansas: 0.12%
+Colorado St: 0.10%
+North Carolina: 0.09%
+Creighton: 0.09%
+Oklahoma: 0.06%
+New Mexico: 0.05%
+San Diego St: 0.02%
+Drake: 0.02%
+Memphis: 0.01%
+Yale: 0.00%
+Lipscomb: 0.00%
+Grand Canyon: 0.00%
+UNC Wilmington: 0.00%
+Bryant: 0.00%
+NE Omaha: 0.00%
+Norfolk St: 0.00%
+Alabama St: 0.00%
+St Francis PA: 0.00%" fillcolor=lightyellow style=filled]
+	R4Y1 -> R5YZ [color=blue style=solid]
+	R4Z1 -> R5YZ [color=red style=solid]
+	R6CH [label="R6CH
+Duke: 29.01%
+Auburn: 17.96%
+Houston: 17.15%
+Florida: 13.20%
+Tennessee: 5.31%
+Alabama: 3.04%
+Maryland: 2.28%
+Michigan St: 2.19%
+Iowa St: 1.71%
+Texas Tech: 1.70%
+St John's: 1.40%
+Arizona: 1.03%
+Gonzaga: 0.62%
+Wisconsin: 0.49%
+Purdue: 0.39%
+Kentucky: 0.39%
+Missouri: 0.29%
+UCLA: 0.21%
+Texas A&M: 0.20%
+Clemson: 0.17%
+Kansas: 0.17%
+St Mary's CA: 0.16%
+Michigan: 0.16%
+Illinois: 0.15%
+Louisville: 0.10%
+BYU: 0.08%
+Marquette: 0.08%
+Mississippi: 0.05%
+Baylor: 0.05%
+VCU: 0.05%
+Connecticut: 0.05%
+Oregon: 0.04%
+UC San Diego: 0.02%
+Arkansas: 0.02%
+Georgia: 0.02%
+Colorado St: 0.01%
+Creighton: 0.01%
+North Carolina: 0.01%
+Mississippi St: 0.01%
+Oklahoma: 0.01%
+New Mexico: 0.01%
+Texas: 0.01%
+Xavier: 0.00%
+Vanderbilt: 0.00%
+San Diego St: 0.00%
+Drake: 0.00%
+Utah St: 0.00%
+Memphis: 0.00%
+McNeese St: 0.00%
+Liberty: 0.00%
+Yale: 0.00%
+Lipscomb: 0.00%
+Grand Canyon: 0.00%
+High Point: 0.00%
+Troy: 0.00%
+UNC Wilmington: 0.00%
+Akron: 0.00%
+Robert Morris: 0.00%
+Wofford: 0.00%
+Bryant: 0.00%
+NE Omaha: 0.00%
+Montana: 0.00%
+SIUE: 0.00%
+Norfolk St: 0.00%
+American Univ: 0.00%
+Mt St Mary's: 0.00%
+Alabama St: 0.00%
+St Francis PA: 0.00%" fillcolor=lightyellow style=filled]
+	R5WX -> R6CH [color=blue style=solid]
+	R5YZ -> R6CH [color=red style=solid]
+}
