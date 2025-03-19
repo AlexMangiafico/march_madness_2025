@@ -2,29 +2,40 @@
 
 This project provides a set of Python scripts to simulate and analyze tournament data. The scripts are designed to handle data loading, backtesting, model training, and evaluation of tournament advancement probabilities, as well as generating visualizations of these probabilities and outcomes.
 
+## Table of Contents
+
+- [`Project Structure`](#project-structure): Main script to execute the simulation.
+- [`Usage & Contributing`](#Usage-&-Contributing): Loads and preprocesses the input data.
+- [`Example Output`](#Example-Output): Evaluation metrics for model performance.
+
+- 
 ## Project Structure
 
 The project is organized as follows:
 
 - **src/**: Contains all the source code for the project, including the core scripts for training, evaluating, and running simulations.
-  - [`backtest`](#backtest): Backtest the simulation results.
-  - [`data_loader`](#data-loader): Loads and preprocesses the input data.
+ 
   - [`main`](#main): Main script to execute the simulation.
+  - [`data_loader`](#data-loader): Loads and preprocesses the input data.
   - [`metrics`](#metrics): Evaluation metrics for model performance.
-  - [`model`](#model): Model definitions and training logic.
-  - [`oddstrader_comparison`](#oddstrader-comparison): Compares model predictions with betting odds.
-  - [`predict`](#predict): Makes predictions based on the trained model.
   - [`ratings`](#ratings): Computes team or player ratings based on performance.
-  - [`simulate`](#simulate): Runs simulations of tournament outcomes.
+  - [`model`](#model): Model definitions and training logic.
   - [`train`](#train): Trains the model on the input data.
+  - [`predict`](#predict): Makes predictions based on the trained model.
+  - [`oddstrader_comparison`](#oddstrader-comparison): Compares model predictions with betting odds.
+  - [`backtest`](#backtest): Backtest the simulation results.
+  - [`simulate`](#simulate): Runs simulations of tournament outcomes.
   - [`visualize`](#visualize): Generates plots and visualizations.
 - **stored_csvs/**: Stores CSV files with the results of predictions made during the simulation (e.g., predictions for tournament outcomes).
 - **models/**: Stores the trained machine learning models used to make predictions.
 - **kaggle_data/**: Contains raw input data required for the simulation, including tournament data and player statistics.
 
+
 ---
 
-## Main
+### File Descriptions
+
+### Main
 
 The `main.py` script serves as the entry point for running the entire simulation and analysis process. It ties together various functions from other scripts (like `train`, `predict`, `visualize`) and orchestrates the flow of data through the pipeline.
 
@@ -35,7 +46,7 @@ The `main.py` script serves as the entry point for running the entire simulation
 
 ---
 
-## Data Loader
+### Data Loader
 
 The `data_loader.py` script handles the loading and preprocessing of data. It reads raw data from external files, cleans, and formats it for use in model training and evaluation.
 
@@ -46,7 +57,7 @@ The `data_loader.py` script handles the loading and preprocessing of data. It re
 
 ---
 
-## Metrics
+### Metrics
 
 The `metrics.py` script defines functions for evaluating model performance. It calculates various performance metrics, such as accuracy, precision, recall, and F1 score, for assessing how well the models are predicting tournament outcomes.
 
@@ -57,7 +68,7 @@ The `metrics.py` script defines functions for evaluating model performance. It c
 
 ---
 
-## Ratings
+### Ratings
 
 The `ratings.py` script calculates and maintains player and team ratings based on historical data. This is used to assess the strength of teams and how likely they are to succeed in the tournament.
 
@@ -68,7 +79,7 @@ The `ratings.py` script calculates and maintains player and team ratings based o
 
 ---
 
-## Model
+### Model
 
 The `model.py` script defines the machine learning models used for tournament prediction. This may include a variety of models such as logistic regression, random forests, or neural networks.
 
@@ -79,7 +90,7 @@ The `model.py` script defines the machine learning models used for tournament pr
 
 ---
 
-## Train
+### Train
 
 The `train.py` script trains machine learning models using the tournament data. It uses algorithms to learn from historical data and generate a predictive model for future tournaments.
 
@@ -90,7 +101,7 @@ The `train.py` script trains machine learning models using the tournament data. 
 
 ---
 
-## Predict
+### Predict
 
 The `predict.py` script is responsible for using trained models to make predictions on new, unseen data. It generates predictions for tournament outcomes and other key metrics.
 
@@ -101,7 +112,7 @@ The `predict.py` script is responsible for using trained models to make predicti
 
 ---
 
-## Oddstrader Comparison
+### Oddstrader Comparison
 
 The `oddstrader_comparison.py` script compares the results of the simulation against actual betting odds data to evaluate how well the model predictions match up with real-world odds.
 
@@ -112,7 +123,7 @@ The `oddstrader_comparison.py` script compares the results of the simulation aga
 
 ---
 
-## Backtest
+### Backtest
 
 The `backtest.py` script is responsible for evaluating the performance of different models and strategies using historical data. It runs simulations over a set period, compares different models, and produces performance metrics.
 
@@ -123,7 +134,7 @@ The `backtest.py` script is responsible for evaluating the performance of differ
 
 ---
 
-## Simulate
+### Simulate
 
 The `simulate.py` script performs the core simulation of the tournament. It runs Monte Carlo simulations or other probabilistic methods to simulate multiple tournament outcomes based on model predictions.
 
@@ -134,7 +145,7 @@ The `simulate.py` script performs the core simulation of the tournament. It runs
 
 ---
 
-## Visualize
+### Visualize
 
 The `visualize.py` script generates visualizations of the tournament data and simulation results. It includes functionality for plotting heatmaps, tree diagrams, and other visual representations of team advancement probabilities.
 
