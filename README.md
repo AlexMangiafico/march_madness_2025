@@ -6,8 +6,9 @@ This project provides a set of Python scripts to simulate and analyze tournament
 
 - [`Project Structure`](#project-structure)
 - [`File Descriptions`](#file-descriptions)
-- [`Usage & Contributing`](#csage-&-contributing)
+- [`Usage & Contributing`](#usage-&-contributing)
 - [`Example Output`](#example-output)
+- [`Future Improvements`](#future-improvements)
 
 - 
 ## Project Structure
