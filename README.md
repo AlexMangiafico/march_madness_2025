@@ -4,9 +4,10 @@ This project provides a set of Python scripts to simulate and analyze tournament
 
 ## Table of Contents
 
-- [`Project Structure`](#project-structure): Main script to execute the simulation.
-- [`Usage & Contributing`](#Usage-&-Contributing): Loads and preprocesses the input data.
-- [`Example Output`](#Example-Output): Evaluation metrics for model performance.
+- [`Project Structure`](#project-structure)
+- [`File Descriptions`](#file-descriptions)
+- [`Usage & Contributing`](#csage-&-contributing)
+- [`Example Output`](#example-output)
 
 - 
 ## Project Structure
@@ -33,7 +34,7 @@ The project is organized as follows:
 
 ---
 
-### File Descriptions
+## File Descriptions
 
 ### Main
 
@@ -172,7 +173,7 @@ The `visualize.py` script generates visualizations of the tournament data and si
    python src/main.py
    ```  
 
-## 📈 Example Output  
+## Example Output  
 ![Model Accuracy](images/heatmap_Men_2025.png)
 *Description*: A graph showing the accuracy of the model across different validation sets or epochs.
 
