@@ -10,7 +10,6 @@ This project provides a set of Python scripts to simulate and analyze tournament
 - [`Example Output`](#example-output)
 - [`Future Improvements`](#future-improvements)
 
-- 
 ## Project Structure
 
 The project is organized as follows:
