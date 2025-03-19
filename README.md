@@ -162,7 +162,7 @@ The `visualize.py` script generates visualizations of the tournament data and si
    ```  
 
 ## 📈 Example Output  
-![Model Accuracy](path_to_accuracy_graph.png)
+![Model Accuracy](images/heatmap_Men_2025.png)
 *Description*: A graph showing the accuracy of the model across different validation sets or epochs.
 
 ![Betting Odds vs Model Predictions](path_to_betting_odds_comparison.png)
