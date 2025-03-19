@@ -6,7 +6,7 @@ This project provides a set of Python scripts to simulate and analyze tournament
 
 - [`Project Structure`](#project-structure)
 - [`File Descriptions`](#file-descriptions)
-- [`Usage & Contributing`](#usage-&-contributing)
+- [`Usage and Contributing`](#usage-and-contributing)
 - [`Example Output`](#example-output)
 - [`Future Improvements`](#future-improvements)
 
@@ -158,7 +158,7 @@ The `visualize.py` script generates visualizations of the tournament data and si
 
 ---
 
-## Usage & Contributing
+## Usage and Contributing
 
 1. Clone this repository:  
    ```bash
@@ -188,7 +188,7 @@ The `visualize.py` script generates visualizations of the tournament data and si
 *Description*: A graph showing the trade-off between precision and recall for the trained model.
 
 
-## 🚀 Future Improvements  
+## Future Improvements  
 - **More Advanced Models** (e.g., machine learning approaches)  
 - **Interactive Visualizations**  
 - **Automated Data Updates**  
