@@ -2,20 +2,25 @@
 
 This project provides a set of Python scripts to simulate and analyze tournament data. The scripts are designed to handle data loading, backtesting, model training, and evaluation of tournament advancement probabilities, as well as generating visualizations of these probabilities and outcomes.
 
-## Table of Contents
+## Project Structure
 
-- [Main](#main)
-- [Data Loader](#data-loader)
-- [Metrics](#metrics)
-- [Ratings](#ratings)
-- [Model](#model)
-- [Train](#train)
-- [Predict](#predict)
-- [Oddstrader Comparison](#oddstrader-comparison)
-- [Backtest](#backtest)
-- [Simulate](#simulate)
-- [Visualize](#visualize)
-- [Usage & Contributing](#usage--contributing)
+The project is organized as follows:
+
+- **src/**: Contains all the source code for the project, including the core scripts for training, evaluating, and running simulations.
+  - [`backtest.py`](#backtest): Backtest the simulation results.
+  - [`data_loader.py`](#data-loader): Loads and preprocesses the input data.
+  - [`main.py`](#main): Main script to execute the simulation.
+  - [`metrics.py`](#metrics): Evaluation metrics for model performance.
+  - [`model.py`](#model): Model definitions and training logic.
+  - [`oddstrader_comparison.py`](#oddstrader-comparison): Compares model predictions with betting odds.
+  - [`predict.py`](#predict): Makes predictions based on the trained model.
+  - [`ratings.py`](#ratings): Computes team or player ratings based on performance.
+  - [`simulate.py`](#simulate): Runs simulations of tournament outcomes.
+  - [`train.py`](#train): Trains the model on the input data.
+  - [`visualize.py`](#visualize): Generates plots and visualizations.
+- **stored_csvs/**: Stores CSV files with the results of predictions made during the simulation (e.g., predictions for tournament outcomes).
+- **models/**: Stores the trained machine learning models used to make predictions.
+- **kaggle_data/**: Contains raw input data required for the simulation, including tournament data and player statistics.
 
 ---
 
@@ -169,26 +174,6 @@ The `visualize.py` script generates visualizations of the tournament data and si
 ![Precision-Recall Curve](path_to_precision_recall_curve.png)
 *Description*: A graph showing the trade-off between precision and recall for the trained model.
 
-## 📁 Project Structure  
-## Project Structure
-
-The project is organized as follows:
-
-- **src/**: Contains all the source code for the project, including the core scripts for training, evaluating, and running simulations.
-  - `backtest.py`: Backtest the simulation results.
-  - `data_loader.py`: Loads and preprocesses the input data.
-  - `main.py`: Main script to execute the simulation.
-  - `metrics.py`: Evaluation metrics for model performance.
-  - `model.py`: Model definitions and training logic.
-  - `oddstrader_comparison.py`: Compares model predictions with betting odds.
-  - `predict.py`: Makes predictions based on the trained model.
-  - `ratings.py`: Computes team or player ratings based on performance.
-  - `simulate.py`: Runs simulations of tournament outcomes.
-  - `train.py`: Trains the model on the input data.
-  - `visualize.py`: Generates plots and visualizations.
-- **stored_csvs/**: Stores CSV files with the results of predictions made during the simulation (e.g., predictions for tournament outcomes).
-- **models/**: Stores the trained machine learning models used to make predictions.
-- **kaggle_data/**: Contains raw input data required for the simulation, including tournament data and player statistics.
 
 ## 🚀 Future Improvements  
 - **More Advanced Models** (e.g., machine learning approaches)  
