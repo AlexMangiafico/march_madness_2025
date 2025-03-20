@@ -23,6 +23,7 @@ if __name__ == "__main__":
     matchups_features = src.train.add_rating_features_to_matchups(training_matchups, rating_metrics)
     src.train.train_models(matchups_features, ['lr', 'rf', 'nn'])
 
+
     #Make predictions
     src.predict.predict_all_possible_matchups(start_predict, end_predict, rating_metrics)
 

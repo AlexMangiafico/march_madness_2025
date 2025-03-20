@@ -120,13 +120,11 @@ def train_rf(matchups, feature_cols: List[str], pred_col: str = 'Win', n_estimat
 
     return model, scaler
 
-
 def train_nn(matchups, feature_cols: List[str], pred_col: str = 'Win'):
     """
     Trains a neural network model to predict win/loss outcomes using matchups data.
     Evaluates the model's accuracy and loss on the test set.
     """
-
     # Prepare features (X) and target (y)
     X = matchups[feature_cols]
     y = matchups[pred_col]
@@ -140,10 +138,10 @@ def train_nn(matchups, feature_cols: List[str], pred_col: str = 'Win'):
 
     # Define the neural network model
     model = Sequential([
-        Input(shape=(X_train.shape[1],)),  # Input layer
-        Dense(18, activation='relu'),  # Hidden layer with 18 neurons
-        Dense(10, activation='relu'),  # Hidden layer with 10 neurons
-        Dense(1, activation='sigmoid')  # Output layer (binary classification)
+        Input(shape=(X_train.shape[1],)),
+        Dense(18, activation='relu'),
+        Dense(10, activation='relu'),
+        Dense(1, activation='sigmoid')  # Single neuron for binary classification
     ])
 
     # Compile the model with Adam optimizer and binary crossentropy loss
