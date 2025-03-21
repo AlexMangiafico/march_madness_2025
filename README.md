@@ -187,6 +187,9 @@ The `visualize.py` script generates visualizations of the tournament data and si
    ```bash
    python src/main.py
    ```  
+## Results
+
+Follow my progress at https://www.kaggle.com/competitions/march-machine-learning-mania-2025/leaderboard#
 
 ## Future Improvements  
 - **More Advanced Models**
