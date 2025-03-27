@@ -17,3 +17,6 @@ This project focuses on predicting the outcomes of college basketball games in t
 - **Competition Performance**: Review how the model performed in actual competitions.
 
 Explore the sections to learn more about each aspect of the project!
+
+
+- [Process](process/)
