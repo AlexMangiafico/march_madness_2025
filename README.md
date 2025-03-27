@@ -1,5 +1,5 @@
 # March Madness 2025  
 
-View this project at [Project Site](https://alexmangiafico.github.io/march_madness_2025/)
+Explain different folders
 
-Follow my progress at [Kaggle Leaderboard](https://www.kaggle.com/competitions/march-machine-learning-mania-2025/leaderboard#)
+pages folder has all of the config stuff for the website
