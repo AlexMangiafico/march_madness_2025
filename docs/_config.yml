@@ -1,6 +1,6 @@
 title: "March Madness 2025"
 description: "Predicting College Basketball Games"
-baseurl: "" 
+baseurl: "/march_madness_2025"
 url: "https://alexmangiafico.github.io/march_madness_2025"
 remote_theme: qwtel/hydejack
 plugins:
