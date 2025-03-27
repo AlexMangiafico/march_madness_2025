@@ -4,6 +4,4 @@ title: "Results"
 permalink: /results/
 ---
 
-# Results
-
-some stuff
+some results
