@@ -11,8 +11,8 @@ menu:
   - title: "Home"
     url: /
   - title: "Process"
-    url: /pages/process/
+    url: /process/
   - title: "Exploratory Data Analysis"
-    url: /pages/eda/
+    url: /eda/
   - title: "Results"
-    url: /pages/results/
+    url: /results/
