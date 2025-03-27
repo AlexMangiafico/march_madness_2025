@@ -6,3 +6,8 @@ include:
   - _pages
 exclude:
   - README.md
+
+
+collections:
+  pages:
+    output: true
