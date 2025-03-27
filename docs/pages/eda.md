@@ -4,6 +4,4 @@ title: "EDA"
 permalink: /eda/
 ---
 
-# EDA
-
-some stuff
+eda text
