@@ -1,6 +1,6 @@
-baseurl: /databall
-title: DataBall
-description: Betting on the NBA with data
+baseurl: /march_madness_2025
+title: March Madness 2025
+description: Predicting College Basketball Games
 
 include:
   - _pages
