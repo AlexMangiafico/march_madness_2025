@@ -2,5 +2,5 @@
 
 Explain different folders
 
-pages folder has all of the config stuff for the website
-[link](https://github.com/alexmangiafico/pages)
+docs folder has all of the config stuff for the website
+[Docs](https://github.com/AlexMangiafico/march_madness_2025/tree/main/docs)
