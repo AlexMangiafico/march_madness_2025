@@ -2,4 +2,7 @@ title: "March Madness 2025"
 description: "Predicting College Basketball Games"
 baseurl: ""
 url: "https://alexmangiafico.github.io/march_madness_2025"
-theme: "minima"
+theme: minima
+header_pages:
+  - index.md
+  - process.md
