@@ -1,8 +1,18 @@
 title: "March Madness 2025"
 description: "Predicting College Basketball Games"
-baseurl: ""
+baseurl: "" 
 url: "https://alexmangiafico.github.io/march_madness_2025"
-theme: minima
-header_pages:
-  - index.md
-  - process.md
+remote_theme: qwtel/hydejack
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+menu:
+  - title: "Home"
+    url: /
+  - title: "Process"
+    url: /process/
+  - title: "Exploratory Data Analysis"
+    url: /eda/
+  - title: "Results"
+    url: /results/
