@@ -1,5 +1,5 @@
 title: "March Madness 2025"
 description: "Predicting College Basketball Games"
-baseurl: "" # Leave it blank if it's hosted directly on your GitHub Pages repository
-url: "https://<your-username>.github.io" # Your GitHub username or project name
-theme: "minima" # or another theme if you prefer
+baseurl: ""
+url: "https://alexmangiafico.github.io/march_madness_2025"
+theme: "minima"
