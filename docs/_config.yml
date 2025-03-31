@@ -2,6 +2,7 @@ title: "March Madness 2025"
 description: "Predicting College Basketball Games"
 baseurl: "/march_madness_2025"
 url: "https://alexmangiafico.github.io/march_madness_2025"
+
 remote_theme: qwtel/hydejack
 plugins:
   - jekyll-feed
@@ -12,7 +13,22 @@ menu:
     url: /
   - title: "Process"
     url: /process/
+    children:
+      - title: "Data Collection"
+        url: /process/data-collection/
+      - title: "Feature Engineering"
+        url: /process/feature-engineering/
   - title: "Exploratory Data Analysis"
     url: /eda/
+    children:
+      - title: "Visualizations"
+        url: /eda/visualizations/
+      - title: "Statistical Summaries"
+        url: /eda/statistics/
   - title: "Results"
     url: /results/
+    children:
+      - title: "Model Performance"
+        url: /results/model-performance/
+      - title: "Conclusions"
+        url: /results/conclusions/
