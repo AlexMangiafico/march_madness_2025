@@ -3,6 +3,8 @@ description: "Predicting College Basketball Games"
 baseurl: "/march_madness_2025"
 url: "https://alexmangiafico.github.io/march_madness_2025"
 
+
+
 remote_theme: qwtel/hydejack
 plugins:
   - jekyll-feed
@@ -11,24 +13,30 @@ plugins:
 menu:
   - title: "Home"
     url: /
-  - title: "Process"
-    url: /process/
-    children:
-      - title: "Data Collection"
-        url: /process/data-collection/
-      - title: "Feature Engineering"
-        url: /process/feature-engineering/
+    
+  - title: "---"  # Divider for visual separation
+
+  - title: "Process"  # Section title (not a link)
+    url: ""  # Empty URL makes it non-clickable
+  - title: "Data Collection"
+    url: /process/data-collection/
+  - title: "Feature Engineering"
+    url: /process/feature-engineering/
+
+  - title: "---"  # Divider for visual separation
+
   - title: "Exploratory Data Analysis"
-    url: /eda/
-    children:
-      - title: "Visualizations"
-        url: /eda/visualizations/
-      - title: "Statistical Summaries"
-        url: /eda/statistics/
+    url: ""  # Section title, non-clickable
+  - title: "Visualizations"
+    url: /eda/visualizations/
+  - title: "Statistical Summaries"
+    url: /eda/statistics/
+
+  - title: "---"
+
   - title: "Results"
-    url: /results/
-    children:
-      - title: "Model Performance"
-        url: /results/model-performance/
-      - title: "Conclusions"
-        url: /results/conclusions/
+    url: ""
+  - title: "Model Performance"
+    url: /results/model-performance/
+  - title: "Conclusions"
+    url: /results/conclusions/
