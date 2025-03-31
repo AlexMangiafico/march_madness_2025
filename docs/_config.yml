@@ -21,12 +21,12 @@ menu:
     url: /outline/
     
   - title: "Modeling"
-  - title: "Basketball Stats Engineering"
-    url: /basketball_stats_engineering/
-  - title: "Feature Engineering"
-    url: /feature_engineering/
-  - title: "Modeling"
-    url: /modeling/
+    - title: "Basketball Stats Engineering"
+      url: /basketball_stats_engineering/
+    - title: "Feature Engineering"
+      url: /feature_engineering/
+    - title: "Building Models"
+      url: /building_models/
 
 
   - title: "Results"
