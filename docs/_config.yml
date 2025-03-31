@@ -16,27 +16,31 @@ menu:
     
   - title: "---"  # Divider for visual separation
 
-  - title: "Process"  # Section title (not a link)
+  - title: "Introduction"  # Section title (not a link)
     url: ""  # Empty URL makes it non-clickable
-  - title: "Data Collection"
-    url: /process/data-collection/
-  - title: "Feature Engineering"
-    url: /process/feature-engineering/
+  - title: "Background"
+    url: /background/
+  - title: "Outline"
+    url: /outline/
 
   - title: "---"  # Divider for visual separation
 
-  - title: "Exploratory Data Analysis"
+  - title: "Modeling"
     url: ""  # Section title, non-clickable
-  - title: "Visualizations"
-    url: /eda/visualizations/
-  - title: "Statistical Summaries"
-    url: /eda/statistics/
+  - title: "Basketball Stats Engineering"
+    url: /basketball_stats_engineering/
+  - title: "Feature Engineering"
+    url: /feature_engineering/
+  - title: "Modeling"
+    url: /modeling/
 
-  - title: "---"
 
   - title: "Results"
-    url: ""
-  - title: "Model Performance"
-    url: /results/model-performance/
-  - title: "Conclusions"
-    url: /results/conclusions/
+  - title: "Backtesting"
+    url: /backtesting/
+  - title: "2025 Predictions"
+    url: /2025_predictions/
+
+  - title: "Performance"
+  - title: "Machine Learning Mania"
+    url: /machine_learning_mania/
