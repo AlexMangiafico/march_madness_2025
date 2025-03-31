@@ -9,16 +9,10 @@ plugins:
 
 menu:
   - title: "Home"
-    url: "{{ site.baseurl }}/"
-
-  - title: "Analysis"
-    sublinks:
-      - title: "Process"
-        url: "{{ site.baseurl }}/process/"
-      - title: "Exploratory Data Analysis"
-        url: "{{ site.baseurl }}/eda/"
-      - title: "Results"
-        url: "{{ site.baseurl }}/results/"
-
-  - title: "About"
-    url: "{{ site.baseurl }}/about/"
+    url: /
+  - title: "Process"
+    url: /process/
+  - title: "Exploratory Data Analysis"
+    url: /eda/
+  - title: "Results"
+    url: /results/
