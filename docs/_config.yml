@@ -15,26 +15,13 @@ menu:
     url: /
 
   - title: "Introduction"
-  - title: "Background"
-    url: /background/
-  - title: "Outline"
-    url: /outline/
+    url: /introduction/
     
   - title: "Modeling"
-    - title: "Basketball Stats Engineering"
-      url: /basketball_stats_engineering/
-    - title: "Feature Engineering"
-      url: /feature_engineering/
-    - title: "Building Models"
-      url: /building_models/
-
+    url: /modeling/
 
   - title: "Results"
-  - title: "Backtesting"
-    url: /backtesting/
-  - title: "2025 Predictions"
-    url: /2025_predictions/
+    url: /results/
 
   - title: "Performance"
-  - title: "Machine Learning Mania"
-    url: /machine_learning_mania/
+    url: /performance/
