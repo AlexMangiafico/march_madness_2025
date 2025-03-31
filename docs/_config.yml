@@ -3,40 +3,23 @@ description: "Predicting College Basketball Games"
 baseurl: "/march_madness_2025" # The subdirectory where the site is located
 url: "https://alexmangiafico.github.io/march_madness_2025" # The main URL of your site
 
-remote_theme: jekyll/hyde # Switch to the Jekyll Hyde theme
+remote_theme: jekyll/hyde # Use the Jekyll Hyde theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Menu configuration
 menu:
-  - title: "Home"
-    url: /
-
-  - title: "---"  # Divider for visual separation
-  
-  - title: "Introduction"  # Section title (not a link)
-    url: ""  # Empty URL makes it non-clickable
-  - title: "Background"
-    url: /background/
-  - title: "Outline"
-    url: /outline/
-
-  - title: "---"  # Divider for visual separation
-
-  - title: "Modeling"
-  - title: "Basketball Stats Engineering"
-    url: /basketball_stats_engineering/
-  - title: "Feature Engineering"
-    url: /feature_engineering/
-  - title: "Modeling"
-    url: /modeling/
-
-  - title: "Results"
-  - title: "Backtesting"
-    url: /backtesting/
-  - title: "2025 Predictions"
-    url: /2025_predictions/
-
-  - title: "Performance"
-  - title: "Machine Learning Mania"
-    url: /machine_learning_mania/
+  home: "/"
+  intro: "/"
+  background: "/background/"
+  outline: "/outline/"
+  modeling:
+    - "/basketball_stats_engineering/"
+    - "/feature_engineering/"
+    - "/modeling/"
+  results:
+    - "/backtesting/"
+    - "/2025_predictions/"
+  performance:
+    - "/machine_learning_mania/"
