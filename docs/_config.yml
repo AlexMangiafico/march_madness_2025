@@ -25,8 +25,7 @@ menu:
 
   - title: "---"  # Divider for visual separation
 
-  Modeling
-    url: ""  # Section title, non-clickable
+  - title: "Modeling"
   - title: "Basketball Stats Engineering"
     url: /basketball_stats_engineering/
   - title: "Feature Engineering"
@@ -35,12 +34,12 @@ menu:
     url: /modeling/
 
 
-  title: "Results"
+  - title: "Results"
   - title: "Backtesting"
     url: /backtesting/
   - title: "2025 Predictions"
     url: /2025_predictions/
 
-  "Performance"
+  - title: "Performance"
   - title: "Machine Learning Mania"
     url: /machine_learning_mania/
