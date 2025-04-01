@@ -18,4 +18,8 @@ This project combines the thrill of March Madness with the power of data science
 
 ---
 
-Ready to dive into the data? Follow along and see how data science can enhance your understanding of March Madness!
+Ready to dive into the data?
+
+[Check out my background]( {{ site.baseurl }}/background/ )
+
+[Check out my outline]( {{ site.baseurl }}/outline/ )
