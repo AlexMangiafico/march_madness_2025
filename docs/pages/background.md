@@ -1,14 +1,11 @@
 ---
 layout: page
-title: "Background"
+title: "Introduction"
 permalink: /background/
 ---
 
 
-
-# Introduction
-
-[Introduction Home](/introduction/) |  [Background]({{ site.baseurl }}/background/) |  [Outline](/outline/)  
+[Introduction Home]({{ site.baseurl }}/introduction/) |  [Background]({{ site.baseurl }}/background/) |  [Outline]({{ site.baseurl }}/outline/)
 
 ## Background
 
