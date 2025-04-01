@@ -4,4 +4,4 @@ title: "EDA"
 permalink: /eda/
 ---
 
-eda text
+outline here
