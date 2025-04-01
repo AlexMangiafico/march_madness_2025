@@ -4,6 +4,14 @@ title: "Introduction"
 permalink: /introduction/
 ---
 
+
+
+#Introduction
+
+[Introduction Home](/introduction/) |  
+[Background](/background/) |  
+[Outline](/outline/)  
+
 ## Why March Madness?
 
 March Madness is one of the most exciting and unpredictable events in sports, but also the tournament most publicly forecasted by the general public. Every year tens of millions of bracket submissions attempt to predict the outcomes of the 134 games making up the Men's and Women's tournaments. From flipping a coin to picking chalk, from elo models to vegas odds, from team colors to school mascots, every strategy under the sun has been employed to better predict how successfully a bunch of 20 year olds will throw a round orange ball into a round orange hoop. And we're here for it, every year, rain or shine.
@@ -14,14 +22,6 @@ College sports present a unique challenge becuase the talent disparity between p
 
 ## Goals
 
-The goal of this project is to train a model that can predict the outcome of any college basketball game played in the future. These will be moneyline predictions, handicapping each team's chances to win the game, though similar methodology could be employed to predict margin of victory or points total. This output was chosen to match the submission format of Kaggle's annual [March Madness Machine Learning Mania]([https://www.ncaa.com/march-madness](https://www.kaggle.com/competitions/march-machine-learning-mania-2025)) competition, which I enter to compare my predictions to those of other models.
+The goal of this project is to train a model that can predict the outcome of any college basketball game played in the future. These will be moneyline predictions, handicapping each team's chances to win the game, though similar methodology could be employed to predict margin of victory or points total. This output was chosen to match the submission format of Kaggle's annual [March Madness Machine Learning Mania](https://www.kaggle.com/competitions/march-machine-learning-mania-2025) competition, which I enter to compare my predictions to those of other models.
 
 [Visit NCAA.com](https://www.ncaa.com/march-madness)
-
----
-
-Ready to dive into the data?
-
-[Check out my background]( {{ site.baseurl }}/background/ )
-
-[Check out my outline]( {{ site.baseurl }}/outline/ )
