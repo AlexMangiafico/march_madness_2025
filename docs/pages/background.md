@@ -6,11 +6,9 @@ permalink: /background/
 
 
 
-#Introduction
+# Introduction
 
-[Introduction Home](/introduction/) |  
-[Background](/background/) |  
-[Outline](/outline/)  
+[Introduction Home](/introduction/) |  [Background]( {{ site.baseurl }}/background/ ) |  [Outline](/outline/)  
 
 ## Background
 
