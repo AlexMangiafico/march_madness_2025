@@ -8,10 +8,6 @@ show_page_list: false
 
 remote_theme: hydecorp/hyde
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
 menu:
   - title: "Home"
     url: /
