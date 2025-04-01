@@ -1,7 +1,17 @@
 ---
 layout: page
-title: "EDA"
-permalink: /eda/
+title: "Outline"
+permalink: /outline/
 ---
 
-outline here
+
+
+#Introduction
+
+[Introduction Home](/introduction/) |  
+[Background](/background/) |  
+[Outline](/outline/)  
+
+## Outline
+
+Talking about outline
