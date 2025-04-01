@@ -6,7 +6,8 @@ show_related_posts: false
 show_page_list: false
 
 
-remote_theme: qwtel/hydejack
+remote_theme: hydecorp/hyde
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
