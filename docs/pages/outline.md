@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "Outline"
-permalink: /outline/
+permalink: /introduction/outline/
 ---
 
 
-[Introduction Home]({{ site.baseurl }}/introduction/) |  [Background]({{ site.baseurl }}/background/) |  [Outline]({{ site.baseurl }}/outline/)
+[Introduction Home]({{ site.baseurl }}/introduction/) |  [Background]({{ site.baseurl }}/introduction/background/) |  [Outline]({{ site.baseurl }}/introduction/outline/)
 
 
 First I made better advanced stats
