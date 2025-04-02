@@ -19,8 +19,11 @@ menu:
   - title: "Introduction"
     url: /introduction/
     
-  - title: "Building a Model"
-    url: /building_a_model/
+  - title: "Feature Engineering"
+    url: /feature_engineering/
+
+  - title: "Selecting a Model"
+    url: /selection_a_model/
 
   - title: "Results"
     url: /results/
