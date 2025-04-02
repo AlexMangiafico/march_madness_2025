@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Useful Metrics"
-permalink: /useful_metrics/
+title: "Matchup Features"
+permalink: /matchup_features/
 ---
 
 
