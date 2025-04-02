@@ -5,7 +5,7 @@ permalink: /introduction/
 ---
 
 
-[Introduction Home]({{ site.baseurl }}/introduction/) |  [Background]({{ site.baseurl }}/introduction/background/) |  [Outline]({{ site.baseurl }}/introduction/outline/)
+[Introduction Home]({{ site.baseurl }}/introduction/) |  [Background]({{ site.baseurl }}/background/) |  [Outline]({{ site.baseurl }}/outline/)
 
 
 ## Why March Madness?
