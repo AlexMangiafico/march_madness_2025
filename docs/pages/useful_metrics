@@ -5,7 +5,6 @@ permalink: /useful_metrics/
 ---
 
 
-[Introduction Home]({{ site.baseurl }}/introduction/) |  [Background]({{ site.baseurl }}/background/) |  [Outline]({{ site.baseurl }}/outline/)
-
+[Feature Engineering Home]({{ site.baseurl }}/feature_engineering/) | [Useful Metrics]({{ site.baseurl }}/useful_metrics/) | [Creation/Prevention]({{ site.baseurl }}/creation_prevention/) | [Matchup Features]({{ site.baseurl }}/matchup_features/)
 
 Talk about normalizing things per posession etc
