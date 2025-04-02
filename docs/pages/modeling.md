@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Modeling"
-permalink: /modeling/
+title: "Building A Model"
+permalink: /building_a_model/
 ---
 
 # Modeling Overview
