@@ -23,7 +23,7 @@ menu:
     url: /feature_engineering/
 
   - title: "Selecting a Model"
-    url: /selection_a_model/
+    url: /selecting_a_model/
 
   - title: "Results"
     url: /results/
