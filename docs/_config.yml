@@ -19,8 +19,8 @@ menu:
   - title: "Introduction"
     url: /introduction/
     
-  - title: "Modeling"
-    url: /modeling/
+  - title: "Building a Model"
+    url: /building_a_model/
 
   - title: "Results"
     url: /results/
