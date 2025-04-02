@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "Background"
-permalink: /introduction/background/
+permalink: /background/
 ---
 
 
-[Introduction Home]({{ site.baseurl }}/introduction/) |  [Background]({{ site.baseurl }}/introduction/background/) |  [Outline]({{ site.baseurl }}/introduction/outline/)
+[Introduction Home]({{ site.baseurl }}/introduction/) |  [Background]({{ site.baseurl }}/background/) |  [Outline]({{ site.baseurl }}/outline/)
 
 Most rankings have offense and defense and treat each game played as two games, one team trying to score and the other team trying to score. This way each team has an offensive rating and a defensive rating, which are elo-like.
 
