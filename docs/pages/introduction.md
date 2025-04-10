@@ -19,5 +19,3 @@ College sports present a unique challenge because the talent disparity between p
 ## Goals
 
 The goal of this project is to train a model that can predict the outcome of any college basketball game played in the future. These will be moneyline predictions, handicapping each team's chances to win the game, though similar methodology could be employed to predict margin of victory or points total. This output was chosen to match the submission format of Kaggle's annual [March Madness Machine Learning Mania](https://www.kaggle.com/competitions/march-machine-learning-mania-2025) competition, which I enter to compare my predictions to those of other models.
-
-[Visit NCAA.com](https://www.ncaa.com/march-madness)
