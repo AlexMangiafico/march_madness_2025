@@ -9,89 +9,582 @@ permalink: /useful_metrics/
 
 When building a predictive model for basketball outcomes, raw stats like field goals made and turnovers don't always tell the full story. To get a clearer picture of a team's performance, I transform these raw numbers into more meaningful metrics that account for pace, efficiency, and contextual factors.
 
-Below, I break down the key new statistics generated in our feature engineering process and explain why they are useful.
+```python
+import pandas as pd
+import numpy as np
+```
 
-Shooting Percentages
+I first read in my regular season results files and examine
 
-Shooting efficiency is a critical factor in evaluating a team's offensive performance. Instead of just using raw field goals made (FGM) and attempted (FGA), I compute shooting percentages:
 
-# Field goal percentage
-teamFGPercent = np.where(df[team + 'FGA'] == 0, None, df[team + 'FGM'] / df[team + 'FGA'])
+```python
+m_detailed_results = pd.read_csv('../kaggle_data/men/MRegularSeasonDetailedResults.csv')
+m_detailed_results['Side'] = 'Men'
+w_detailed_results = pd.read_csv('../kaggle_data/women/WRegularSeasonDetailedResults.csv')
+w_detailed_results['Side'] = 'Women'
+detailed_results = pd.concat([m_detailed_results, w_detailed_results], ignore_index=True)
+```
 
-# Three-point percentage
-teamFG3Percent = np.where(df[team + 'FGA3'] == 0, None, df[team + 'FGM3'] / df[team + 'FGA3'])
 
-# Free throw percentage
-teamFTPercent = np.where(df[team + 'FTA'] == 0, None, df[team + 'FTM'] / df[team + 'FTA'])
+```python
+detailed_results.head()
+```
 
-Why This Matters
 
-Field Goal Percentage (FG%) tells us how efficiently a team scores overall.
 
-Three-Point Percentage (3P%) isolates long-range shooting ability.
 
-Free Throw Percentage (FT%) matters in close games where free throws can decide the outcome.
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-Rebounding and Assist Rates
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-Rebounds and assists contribute significantly to a team's offensive and defensive success, but their raw totals can be misleading. To adjust for context, I calculate percentages instead of just using raw counts.
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Season</th>
+      <th>DayNum</th>
+      <th>WTeamID</th>
+      <th>WScore</th>
+      <th>LTeamID</th>
+      <th>LScore</th>
+      <th>WLoc</th>
+      <th>NumOT</th>
+      <th>WFGM</th>
+      <th>WFGA</th>
+      <th>...</th>
+      <th>LFTM</th>
+      <th>LFTA</th>
+      <th>LOR</th>
+      <th>LDR</th>
+      <th>LAst</th>
+      <th>LTO</th>
+      <th>LStl</th>
+      <th>LBlk</th>
+      <th>LPF</th>
+      <th>Side</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2003</td>
+      <td>10</td>
+      <td>1104</td>
+      <td>68</td>
+      <td>1328</td>
+      <td>62</td>
+      <td>N</td>
+      <td>0</td>
+      <td>27</td>
+      <td>58</td>
+      <td>...</td>
+      <td>16</td>
+      <td>22</td>
+      <td>10</td>
+      <td>22</td>
+      <td>8</td>
+      <td>18</td>
+      <td>9</td>
+      <td>2</td>
+      <td>20</td>
+      <td>Men</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2003</td>
+      <td>10</td>
+      <td>1272</td>
+      <td>70</td>
+      <td>1393</td>
+      <td>63</td>
+      <td>N</td>
+      <td>0</td>
+      <td>26</td>
+      <td>62</td>
+      <td>...</td>
+      <td>9</td>
+      <td>20</td>
+      <td>20</td>
+      <td>25</td>
+      <td>7</td>
+      <td>12</td>
+      <td>8</td>
+      <td>6</td>
+      <td>16</td>
+      <td>Men</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2003</td>
+      <td>11</td>
+      <td>1266</td>
+      <td>73</td>
+      <td>1437</td>
+      <td>61</td>
+      <td>N</td>
+      <td>0</td>
+      <td>24</td>
+      <td>58</td>
+      <td>...</td>
+      <td>14</td>
+      <td>23</td>
+      <td>31</td>
+      <td>22</td>
+      <td>9</td>
+      <td>12</td>
+      <td>2</td>
+      <td>5</td>
+      <td>23</td>
+      <td>Men</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2003</td>
+      <td>11</td>
+      <td>1296</td>
+      <td>56</td>
+      <td>1457</td>
+      <td>50</td>
+      <td>N</td>
+      <td>0</td>
+      <td>18</td>
+      <td>38</td>
+      <td>...</td>
+      <td>8</td>
+      <td>15</td>
+      <td>17</td>
+      <td>20</td>
+      <td>9</td>
+      <td>19</td>
+      <td>4</td>
+      <td>3</td>
+      <td>23</td>
+      <td>Men</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2003</td>
+      <td>11</td>
+      <td>1400</td>
+      <td>77</td>
+      <td>1208</td>
+      <td>71</td>
+      <td>N</td>
+      <td>0</td>
+      <td>30</td>
+      <td>61</td>
+      <td>...</td>
+      <td>17</td>
+      <td>27</td>
+      <td>21</td>
+      <td>15</td>
+      <td>12</td>
+      <td>10</td>
+      <td>7</td>
+      <td>1</td>
+      <td>14</td>
+      <td>Men</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 35 columns</p>
+</div>
 
-# Offensive Rebound Percentage
-teamORPercent = np.where((df[team + 'OR'] == 0) & (df[other + 'DR'] == 0), None, df[team + 'OR'] / (df[team + 'OR'] + df[other + 'DR']))
 
-# Assist Percentage
-teamAstPercent = np.where(df[team + 'FGM'] == 0, None, df[team + 'Ast'] / df[team + 'FGM'])
 
-Why This Matters
 
-Offensive Rebound Percentage (OR%) accounts for missed shots leading to more rebounding opportunities. A team grabbing 10 offensive rebounds might seem impressive, but it matters whether they had 20 or 40 chances.
+```python
+detailed_results['LLoc'] = detailed_results['WLoc'].apply(lambda x: 'A' if x == 'H' else ('H' if x == 'A' else 'N'))
 
-Assist Percentage (Ast%) measures ball movement and offensive efficiency by tracking how many field goals were assisted rather than made in isolation.
+winner_rows = detailed_results.copy()
+loser_rows = detailed_results.copy()
 
-Three-Point Attempt Rate
+for col in detailed_results.columns.tolist():
+    if col[0] == 'W':
+        stat = col[1:]
+        winner_rows[stat] = winner_rows['W' + stat]
+        winner_rows['Opp' + stat] = winner_rows['L' + stat]
+        winner_rows['Win'] = 1
+        loser_rows[stat] = loser_rows['L' + stat]
+        loser_rows['Opp' + stat] = loser_rows['W' + stat]
+        loser_rows['Win'] = 0
 
-Some teams rely heavily on three-pointers, while others focus on inside scoring. This metric quantifies a team's tendency to attempt threes.
+        winner_rows = winner_rows.drop(columns=['W' + stat, 'L' + stat])
+        loser_rows = loser_rows.drop(columns=['W' + stat, 'L' + stat])
 
-# Three-Point Attempt Rate
-teamAtt3Percent = np.where(df[team + 'FGA'] == 0, None, df[team + 'FGA3'] / df[team + 'FGA'])
+games_expanded_detailed = pd.concat([winner_rows, loser_rows], ignore_index=True)
+games_expanded_detailed.columns
+```
 
-Why This Matters
 
-A higher 3P Attempt Rate means a team relies more on perimeter shooting, which can influence variance in game outcomes.
 
-Understanding this helps predict performance against teams that defend the three-point line well.
 
-Per-Possession Stats
+    Index(['Season', 'DayNum', 'NumOT', 'Side', 'TeamID', 'OppTeamID', 'Win',
+           'Score', 'OppScore', 'Loc', 'OppLoc', 'FGM', 'OppFGM', 'FGA', 'OppFGA',
+           'FGM3', 'OppFGM3', 'FGA3', 'OppFGA3', 'FTM', 'OppFTM', 'FTA', 'OppFTA',
+           'OR', 'OppOR', 'DR', 'OppDR', 'Ast', 'OppAst', 'TO', 'OppTO', 'Stl',
+           'OppStl', 'Blk', 'OppBlk', 'PF', 'OppPF'],
+          dtype='object')
 
-Raw totals for points, turnovers, steals, and blocks don’t account for differences in pace (some teams play faster and generate more possessions). To correct this, I normalize these stats per possession.
 
-# Points per possession
-teamPointsPerPoss = np.where(df[team + 'Possessions'] == 0, None, df[team + 'Score'] / df[team + 'Possessions'])
 
-# Turnovers per possession
-teamTOPerPoss = np.where(df[team + 'Possessions'] == 0, None, df[team + 'TO'] / df[team + 'Possessions'])
 
-# Steals per opponent possession
-teamStlPerPoss = np.where(df[other + 'Possessions'] == 0, None, df[team + 'Stl'] / df[other + 'Possessions'])
+```python
+games_expanded_detailed['Possessions'] = (games_expanded_detailed['FGA'] - games_expanded_detailed['OR'] + games_expanded_detailed['TO'] + 0.44 * games_expanded_detailed['FTA'])
+games_expanded_detailed['OppPossessions'] = (games_expanded_detailed['OppFGA'] - games_expanded_detailed['OppOR'] + games_expanded_detailed['OppTO'] + 0.44 * games_expanded_detailed['OppFTA'])
+```
 
-# Blocks per opponent possession
-teamBlkPerPoss = np.where(df[other + 'Possessions'] == 0, None, df[team + 'Blk'] / df[other + 'Possessions'])
 
-# Personal fouls per total possessions in game
-teamPFPerPoss = np.where(df[team + 'Possessions'] == 0, None, df[team + 'Stl'] / (df[team + 'Possessions'] + df[other + 'Possessions']))
+```python
+def safe_divide(numerator, denominator):
+    return np.where(denominator == 0, None, numerator / denominator)
 
-Why This Matters
+for team, other in [("", "Opp"), ("Opp", "")]:
+    # Percentages based on field goals, free throws, assists
+    games_expanded_detailed[f"{team}FGPercent"]      = safe_divide(games_expanded_detailed[f"{team}FGM"],  games_expanded_detailed[f"{team}FGA"])
+    games_expanded_detailed[f"{team}FG3Percent"]     = safe_divide(games_expanded_detailed[f"{team}FGM3"], games_expanded_detailed[f"{team}FGA3"])
+    games_expanded_detailed[f"{team}FTPercent"]      = safe_divide(games_expanded_detailed[f"{team}FTM"],  games_expanded_detailed[f"{team}FTA"])
+    games_expanded_detailed[f"{team}AstPercent"]     = safe_divide(games_expanded_detailed[f"{team}Ast"], games_expanded_detailed[f"{team}FGM"])
+    games_expanded_detailed[f"{team}Att3Percent"]    = safe_divide(games_expanded_detailed[f"{team}FGA3"], games_expanded_detailed[f"{team}FGA"])
 
-Points Per Possession (PPP) measures true scoring efficiency, factoring in pace.
+    # Offensive rebounding percentage (special case)
+    or_denominator = games_expanded_detailed[f"{team}OR"] + games_expanded_detailed[f"{other}DR"]
+    or_zero_check = (games_expanded_detailed[f"{team}OR"] == 0) & (games_expanded_detailed[f"{other}DR"] == 0)
+    games_expanded_detailed[f"{team}ORPercent"] = np.where(or_zero_check, None, safe_divide(games_expanded_detailed[f"{team}OR"], or_denominator))
 
-Turnovers Per Possession (TO%) highlights a team's ball security.
+    # Possession-based metrics
+    games_expanded_detailed[f"{team}PointsPerPoss"] = safe_divide(games_expanded_detailed[f"{team}Score"], games_expanded_detailed[f"{team}Possessions"])
+    games_expanded_detailed[f"{team}TOPerPoss"]     = safe_divide(games_expanded_detailed[f"{team}TO"],    games_expanded_detailed[f"{team}Possessions"])
+    games_expanded_detailed[f"{team}StlPerPoss"]    = safe_divide(games_expanded_detailed[f"{team}Stl"],   games_expanded_detailed[f"{other}Possessions"])
+    games_expanded_detailed[f"{team}BlkPerPoss"]    = safe_divide(games_expanded_detailed[f"{team}Blk"],   games_expanded_detailed[f"{other}Possessions"])
+    total_possessions = games_expanded_detailed[f"{team}Possessions"] + games_expanded_detailed[f"{other}Possessions"]
+    games_expanded_detailed[f"{team}PFPerPoss"]     = safe_divide(games_expanded_detailed[f"{team}Stl"], total_possessions)
+```
 
-Steals & Blocks Per Possession adjust for the fact that teams with more possessions naturally accumulate more steals and blocks.
 
-Personal Fouls Per Possession helps track defensive discipline and potential foul trouble.
 
-Summary
 
-These engineered features help remove biases from raw stats and make comparisons between teams fairer. Instead of relying on absolute numbers, I use rates and percentages to provide a more accurate picture of team strengths and weaknesses.
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-By incorporating these advanced metrics, our model can make better predictions and offer deeper insights into team performance.
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Season</th>
+      <th>DayNum</th>
+      <th>NumOT</th>
+      <th>Side</th>
+      <th>TeamID</th>
+      <th>OppTeamID</th>
+      <th>Win</th>
+      <th>Score</th>
+      <th>OppScore</th>
+      <th>Loc</th>
+      <th>...</th>
+      <th>OppFG3Percent</th>
+      <th>OppFTPercent</th>
+      <th>OppORPercent</th>
+      <th>OppAstPercent</th>
+      <th>OppAtt3Percent</th>
+      <th>OppPointsPerPoss</th>
+      <th>OppTOPerPoss</th>
+      <th>OppStlPerPoss</th>
+      <th>OppBlkPerPoss</th>
+      <th>OppPFPerPoss</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2003</td>
+      <td>10</td>
+      <td>0</td>
+      <td>Men</td>
+      <td>1104</td>
+      <td>1328</td>
+      <td>1</td>
+      <td>68</td>
+      <td>62</td>
+      <td>N</td>
+      <td>...</td>
+      <td>0.2</td>
+      <td>0.727273</td>
+      <td>0.294118</td>
+      <td>0.363636</td>
+      <td>0.188679</td>
+      <td>0.877193</td>
+      <td>0.254669</td>
+      <td>0.120128</td>
+      <td>0.026695</td>
+      <td>0.061813</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2003</td>
+      <td>10</td>
+      <td>0</td>
+      <td>Men</td>
+      <td>1272</td>
+      <td>1393</td>
+      <td>1</td>
+      <td>70</td>
+      <td>63</td>
+      <td>N</td>
+      <td>...</td>
+      <td>0.25</td>
+      <td>0.45</td>
+      <td>0.416667</td>
+      <td>0.291667</td>
+      <td>0.358209</td>
+      <td>0.929204</td>
+      <td>0.176991</td>
+      <td>0.117028</td>
+      <td>0.087771</td>
+      <td>0.058754</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2003</td>
+      <td>11</td>
+      <td>0</td>
+      <td>Men</td>
+      <td>1266</td>
+      <td>1437</td>
+      <td>1</td>
+      <td>73</td>
+      <td>61</td>
+      <td>N</td>
+      <td>...</td>
+      <td>0.115385</td>
+      <td>0.608696</td>
+      <td>0.54386</td>
+      <td>0.409091</td>
+      <td>0.356164</td>
+      <td>0.951341</td>
+      <td>0.187149</td>
+      <td>0.031368</td>
+      <td>0.078419</td>
+      <td>0.01564</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2003</td>
+      <td>11</td>
+      <td>0</td>
+      <td>Men</td>
+      <td>1296</td>
+      <td>1457</td>
+      <td>1</td>
+      <td>56</td>
+      <td>50</td>
+      <td>N</td>
+      <td>...</td>
+      <td>0.272727</td>
+      <td>0.533333</td>
+      <td>0.472222</td>
+      <td>0.5</td>
+      <td>0.44898</td>
+      <td>0.868056</td>
+      <td>0.329861</td>
+      <td>0.069396</td>
+      <td>0.052047</td>
+      <td>0.03471</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2003</td>
+      <td>11</td>
+      <td>0</td>
+      <td>Men</td>
+      <td>1400</td>
+      <td>1208</td>
+      <td>1</td>
+      <td>77</td>
+      <td>71</td>
+      <td>N</td>
+      <td>...</td>
+      <td>0.375</td>
+      <td>0.62963</td>
+      <td>0.488372</td>
+      <td>0.5</td>
+      <td>0.258065</td>
+      <td>1.129135</td>
+      <td>0.159033</td>
+      <td>0.109856</td>
+      <td>0.015694</td>
+      <td>0.055292</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>401175</th>
+      <td>2025</td>
+      <td>131</td>
+      <td>0</td>
+      <td>Women</td>
+      <td>3413</td>
+      <td>3471</td>
+      <td>0</td>
+      <td>66</td>
+      <td>75</td>
+      <td>H</td>
+      <td>...</td>
+      <td>0.210526</td>
+      <td>0.678571</td>
+      <td>0.235294</td>
+      <td>0.384615</td>
+      <td>0.306452</td>
+      <td>0.969995</td>
+      <td>0.142266</td>
+      <td>0.080906</td>
+      <td>0.013484</td>
+      <td>0.039609</td>
+    </tr>
+    <tr>
+      <th>401176</th>
+      <td>2025</td>
+      <td>132</td>
+      <td>0</td>
+      <td>Women</td>
+      <td>3476</td>
+      <td>3192</td>
+      <td>0</td>
+      <td>49</td>
+      <td>66</td>
+      <td>A</td>
+      <td>...</td>
+      <td>0.142857</td>
+      <td>0.944444</td>
+      <td>0.3125</td>
+      <td>0.478261</td>
+      <td>0.381818</td>
+      <td>1.065891</td>
+      <td>0.145349</td>
+      <td>0.129534</td>
+      <td>0.016192</td>
+      <td>0.064683</td>
+    </tr>
+    <tr>
+      <th>401177</th>
+      <td>2025</td>
+      <td>132</td>
+      <td>0</td>
+      <td>Women</td>
+      <td>3119</td>
+      <td>3250</td>
+      <td>0</td>
+      <td>62</td>
+      <td>74</td>
+      <td>A</td>
+      <td>...</td>
+      <td>0.357143</td>
+      <td>0.882353</td>
+      <td>0.277778</td>
+      <td>0.555556</td>
+      <td>0.311111</td>
+      <td>1.184379</td>
+      <td>0.240077</td>
+      <td>0.096154</td>
+      <td>0.0</td>
+      <td>0.048046</td>
+    </tr>
+    <tr>
+      <th>401178</th>
+      <td>2025</td>
+      <td>132</td>
+      <td>0</td>
+      <td>Women</td>
+      <td>3125</td>
+      <td>3293</td>
+      <td>0</td>
+      <td>62</td>
+      <td>83</td>
+      <td>N</td>
+      <td>...</td>
+      <td>0.5</td>
+      <td>0.866667</td>
+      <td>0.185185</td>
+      <td>0.75</td>
+      <td>0.518519</td>
+      <td>1.209913</td>
+      <td>0.189504</td>
+      <td>0.028918</td>
+      <td>0.043378</td>
+      <td>0.014518</td>
+    </tr>
+    <tr>
+      <th>401179</th>
+      <td>2025</td>
+      <td>132</td>
+      <td>0</td>
+      <td>Women</td>
+      <td>3144</td>
+      <td>3456</td>
+      <td>0</td>
+      <td>63</td>
+      <td>66</td>
+      <td>N</td>
+      <td>...</td>
+      <td>0.347826</td>
+      <td>0.571429</td>
+      <td>0.131579</td>
+      <td>0.333333</td>
+      <td>0.365079</td>
+      <td>0.941781</td>
+      <td>0.128425</td>
+      <td>0.087873</td>
+      <td>0.043937</td>
+      <td>0.043365</td>
+    </tr>
+  </tbody>
+</table>
+<p>401180 rows × 61 columns</p>
+</div>
+
+
+
+I ended up not using PointsPerPoss
