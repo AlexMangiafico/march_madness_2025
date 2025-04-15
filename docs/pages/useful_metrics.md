@@ -15,8 +15,10 @@ Rebounding is central to game outcome but is difficult to separate from other as
 
 ![Chart](ORPercent.png)
 
-Finally, assists are also tricky because it is a passing metric that relies directly on a teammate's ability to make shots.
+Finally, assists are also tricky because it is a passing metric that relies directly on a teammate's ability to take and make shots. I wanted a way to normalize assist numbers to reflect how good a team's passing performance was without pace of play or teammate shooting percentages influencing the result. I settled on assists per made basket, and while this is clearly not as predictive of game outcome as raw assists or even assists per possession, it still has some predictive power and should better distill the passing efficiency displayed in the game.
 
+![Chart](AstScatter.png)
 
+![Chart](AstBox.png)
 
 
