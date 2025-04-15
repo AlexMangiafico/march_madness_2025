@@ -13,6 +13,8 @@ In a similar vein, I chose to use shooting percentages intead of raw counts of m
 
 Rebounding is central to game outcome but is difficult to separate from other aspects of the game. Missing shots leads to offensive rebounding opportunities and forcing misses leads to defensive rebounding opportunities, not to mention the fact that pace of play affects both in the same direction. The metric I chose to encapsulate a team's rebounding success is percent of missed shots converted into offensive rebounds. This turns rebounding into purely an offensive statistic, with the defensive piece coming into play when we start talking about limiting the opponent's offensive rebounding.
 
+![Chart](ORPercent.png)
+
 Finally, assists are 
 
 
