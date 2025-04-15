@@ -15,6 +15,8 @@ Rebounding is central to game outcome but is difficult to separate from other as
 
 ![Chart](ORPercent.png)
 
-Finally, assists are 
+Finally, assists are also tricky because it is a passing metric that relies directly on a teammate's ability to make shots.
+
+
 
 
