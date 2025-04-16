@@ -23,7 +23,11 @@ The goal of this project is to train a model that can predict the outcome of any
 ## Outline
 
 I come up with good metrics
+
 I make creation/prevention ratings
+
 I build models and select one
+
 I make predictions for future games
+
 I evaluate the performance of those predictions
