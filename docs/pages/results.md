@@ -8,7 +8,7 @@ permalink: /results/
 ## Predictions for the 2025 Tournament
 
 
-Enter a team name to look up their win probability:
+Enter a team name to look up their win probability 458:
 
 <input type="text" id="teamInput" placeholder="e.g. Iowa" />
 <button onclick="lookupTeam()">Lookup</button>
