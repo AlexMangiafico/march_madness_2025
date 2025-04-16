@@ -19,8 +19,11 @@ menu:
   - title: "Introduction"
     url: /introduction/
     
-  - title: "Feature Engineering"
-    url: /feature_engineering/
+  - title: "Useful Metrics"
+    url: /useful_metrics/
+
+  - title: "Creation/Prevention"
+    url: /creation_prevention/
 
   - title: "Selecting a Model"
     url: /selecting_a_model/
