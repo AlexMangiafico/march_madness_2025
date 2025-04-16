@@ -19,4 +19,12 @@ When two teams play, each team's expected score can be estimated using:
 - **Predicted Score (Team A)** = (Team A ORtg × Team B DRtg) / League Average
 - **Predicted Score (Team B)** = (Team B ORtg × Team A DRtg) / League Average
 
-In this project I attempt to use the same setup to predict the underlying stats of a future basketball game. If offensive efficiency is the ability to create points and defensive efficiency is the ability to prevent a generic opponent from creating points, I should be able to predict more specific outcomes in the same way. We already think about some aspects of basketball this way: creating turnovers and not turning the ball over yourself (here framed as preventing the opponent from creating turnovers) are commonly referenced statistics. Some of my other metrics don't map as nicely to existing language, like creation of 
+Every team starts with the same rating, say the league average, and then one runs through the season to date, adjusting the offensive and defensive ratings of teams based on the difference between predicted scores and actual scores. After cycling through the season results several times the ratings will stabilize such that every ensuing pass through the results will not significantly impact the ratings.
+
+In this project I attempt to use the same setup to predict the underlying stats of a future basketball game, not skipping right to the final score. If offensive efficiency is the ability to create points and defensive efficiency is the ability to prevent a generic opponent from creating points, I should be able to predict more specific outcomes in the same way, which would allow predictions based on what each team does well and poorly. We already think about some aspects of basketball this way: creating turnovers and not turning the ball over yourself (here framed as preventing the opponent from creating turnovers) are commonly referenced statistics. Some of my other metrics don't map as nicely to obvious goals that all teams share, like having ratings for the percentage of shots a team or its opponents takes from three point range.
+
+The way these ratings are created is also the key to how they should be used. How many assists per made basket would Team A have in a potential matchup with Team B? I can multiply Team A's creation rating for assists per made basket by Team B's prevention rating and divide by the league average. Using all of my ratings like this turns the modeling problem into predicting a winner based on the underlying stats of a game, which is a much easier task.
+
+
+
+
