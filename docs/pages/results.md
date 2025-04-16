@@ -5,10 +5,9 @@ permalink: /results/
 ---
 
 
-## Predictions for the 2025 Tournament
+## 2025 Predictions
 
-
-Enter a team name to look up their win probability docs assets 524:
+Finally! Choose two teams and a location for the game to be played!
 
 <h2>Prediction Lookup</h2>
 
@@ -34,3 +33,4 @@ Enter a team name to look up their win probability docs assets 524:
 
 <script src="/march_madness_2025/assets/js/lookup.js"></script>
 
+What does that mean for 2025 March Madness?
