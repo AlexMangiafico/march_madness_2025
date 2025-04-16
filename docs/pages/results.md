@@ -17,16 +17,18 @@ Enter a team name to look up their win probability docs assets 524:
   <option value="w">Women</option>
 </select>
 
+<label for="teamInput">Team 1:</label>
+<input type="text" id="teamInput" placeholder="Team Name">
+<label for="OppInput">Team 2:</label>
+<input type="text" id="oppInput" placeholder="Opponent Team Name">
+<button onclick="lookupPrediction()">Look Up</button>
+
 <label for="location">Team 1 Location:</label>
 <select id="location">
   <option value="home">Home</option>
   <option value="away">Away</option>
   <option value="neutral">Neutral</option>
 </select>
-
-<input type="text" id="teamInput" placeholder="Team Name">
-<input type="text" id="oppInput" placeholder="Opponent Team Name">
-<button onclick="lookupPrediction()">Look Up</button>
 
 <p id="result"></p>
 
