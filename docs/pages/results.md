@@ -8,7 +8,7 @@ permalink: /results/
 ## Predictions for the 2025 Tournament
 
 
-Enter a team name to look up their win probability 459:
+Enter a team name to look up their win probability docs assets:
 
 <input type="text" id="teamInput" placeholder="e.g. Iowa" />
 <button onclick="lookupTeam()">Lookup</button>
@@ -19,7 +19,7 @@ Enter a team name to look up their win probability 459:
 let data = [];
 
 // Load the data from the JSON file in the assets folder
-fetch("{{ site.baseurl }}/assets/data.json")
+fetch("{{ site.baseurl }}/docs/assets/data.json")
   .then(response => response.json())
   .then(json => {
     data = json;
