@@ -16,17 +16,24 @@ Enter a team name to look up their win probability:
 <p id="result"></p>
 
 <script>
-let data;
+let data = [];
 
-// Load the data from the JSON file
-fetch("data.json")
+// Load the data from the JSON file in the assets folder
+fetch("/assets/data.json")
   .then(response => response.json())
-  .then(json => data = json);
+  .then(json => {
+    data = json;
+    console.log("Data loaded:", data);
+  })
+  .catch(error => {
+    console.error("Error loading data:", error);
+    document.getElementById("result").innerText = "Failed to load team data.";
+  });
 
 function lookupTeam() {
   const input = document.getElementById("teamInput").value.trim().toLowerCase();
   const result = data.find(entry => entry.Team.toLowerCase() === input);
-  
+
   if (result) {
     document.getElementById("result").innerText = `Win Probability: ${Math.round(result.WinProb * 100)}%`;
   } else {
