@@ -12,10 +12,8 @@ With a set of features engineered to represent how teams create and prevent spec
 
 While the random forest and neural network models provided flexible ways to capture complex nonlinear relationships, logistic regression proved to be the most effective option for this project. Its performance on backtesting—evaluated using log loss and predictive accuracy across past NCAA tournaments—was comparable to or better than the more complex models. Given its simplicity, speed, and interpretability, logistic regression was ultimately the best fit for a modeling pipeline that already incorporated significant domain knowledge through feature construction.
 
-[Insert chart here: Backtest results comparing model performance on historical NCAA tournaments]
+![Chart](backtesting_graphs.png)
 
 Each model was tested by simulating previous tournaments using only the information available prior to each game. This allowed a direct comparison of how well each approach translated pregame features into accurate win probabilities. Logistic regression consistently performed well across multiple tournament years, suggesting it generalized effectively to new data.
-
-[Insert chart here: Calibration curve showing predicted win probability vs. observed win rate]
 
 In addition to strong performance metrics, logistic regression also provided clear insight into how individual features influenced predictions, which is useful for understanding the behavior of the model in edge cases and for communicating results. For these reasons, it was selected as the modeling approach for the remainder of the project.
