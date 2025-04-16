@@ -5,7 +5,7 @@ permalink: /useful_metrics/
 ---
 
 
-[Feature Engineering Home]({{ site.baseurl }}/feature_engineering/) | [Useful Metrics]({{ site.baseurl }}/useful_metrics/) | [Creation/Prevention]({{ site.baseurl }}/creation_prevention/) | [Matchup Features]({{ site.baseurl }}/matchup_features/)
+[Feature Engineering Home]({{ site.baseurl }}/feature_engineering/) | [Useful Metrics]({{ site.baseurl }}/useful_metrics/) | [Creation/Prevention]({{ site.baseurl }}/creation_prevention/)
 
 In this project I begin with raw game statistics which can be found in boxscores, but I first do some investigation and feature engineering, using the context of college basketball in 2025 to make informed choices about what features should be included in model construction. The first thing I decided was that many of the counting statistics in every boxscore should be normalized for pace of play. A game that goes to triple overtime is likely to have high numbers of blocks by both teams, but that does not mean both teams had a good shot-blocking day. It would also have been reasonable to divide these statistics and some others by number of minutes played, but I made the decision that pace of play is something worth trying to predict. For a matchup in the future where I want to predict the outcome, I can feed in pace of play metrics for both teams as well as per-possession counting stats. The statistics I chose to normalize in this way are blocks, steals, turnovers, and fouls.
 
