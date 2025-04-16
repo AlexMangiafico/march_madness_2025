@@ -1,27 +1,33 @@
-console.log("🔧 Script loaded, attempting fetch...");
+console.log("🔧 lookup.js loaded");
 
-let data;
+async function lookupPrediction() {
+  const gender = document.getElementById("gender").value;
+  const loc = document.getElementById("location").value;
+  const team = document.getElementById("teamInput").value.trim().toLowerCase();
+  const opp = document.getElementById("oppInput").value.trim().toLowerCase();
 
-fetch("/march_madness_2025/assets/data.json")
-  .then(response => response.json())
-  .then(json => {
-    data = json;
-    console.log("✅ Data loaded successfully", data);
-  })
-  .catch(error => {
-    console.error("❌ Failed to load data", error);
-  });
+  const file = `${gender}_${loc}.json`;
+  const url = `/march_madness_2025/assets/${file}`;
+  console.log(`📂 Fetching: ${url}`);
 
-function lookupTeam() {
-  const input = document.getElementById("teamInput").value.trim().toLowerCase();
-  console.log("🔍 Looking up team:", input);
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(`✅ Loaded ${data.length} records`);
 
-  const result = data.find(entry => entry.Team.toLowerCase() === input);
+    const match = data.find(entry =>
+      entry.TeamName.toLowerCase() === team &&
+      entry.OppTeamName.toLowerCase() === opp
+    );
 
-  if (result) {
-    document.getElementById("result").innerText =
-      `Win Probability: ${Math.round(result.WinProb * 100)}%`;
-  } else {
-    document.getElementById("result").innerText = "Team not found.";
+    const resultEl = document.getElementById("result");
+    if (match) {
+      resultEl.innerText = `Predicted Win Probability: ${Math.round(match.Pred * 100)}%`;
+    } else {
+      resultEl.innerText = "Match not found.";
+    }
+  } catch (error) {
+    console.error("❌ Failed to fetch data", error);
+    document.getElementById("result").innerText = "Error loading predictions.";
   }
 }
