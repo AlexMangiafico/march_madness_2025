@@ -12,13 +12,12 @@ Enter a team name to look up their win probability docs assets 524:
 
 <h2>Prediction Lookup</h2>
 
-<label for="gender">Gender:</label>
 <select id="gender">
   <option value="m">Men</option>
   <option value="w">Women</option>
 </select>
 
-<label for="location">Location:</label>
+<label for="location">Team 1 Location:</label>
 <select id="location">
   <option value="home">Home</option>
   <option value="away">Away</option>
