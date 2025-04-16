@@ -22,7 +22,7 @@ async function lookupPrediction() {
 
     const resultEl = document.getElementById("result");
     if (match) {
-      resultEl.innerText = `Predicted Win Probability: ${Math.round(match.Pred * 100)}%`;
+      resultEl.innerText = `Team 1 Predicted Win Probability: ${Math.round(match.Pred * 100)}%`;
     } else {
       resultEl.innerText = "Match not found.";
     }
