@@ -5,7 +5,9 @@ permalink: /creation_prevention/
 ---
 
 
-[Feature Engineering Home]({{ site.baseurl }}/feature_engineering/) | [Useful Metrics]({{ site.baseurl }}/useful_metrics/) | [Creation/Prevention]({{ site.baseurl }}/creation_prevention/)
+
+
+<!-- [Feature Engineering Home]({{ site.baseurl }}/feature_engineering/) | [Useful Metrics]({{ site.baseurl }}/useful_metrics/) | [Creation/Prevention]({{ site.baseurl }}/creation_prevention/) -->
 
 This is the central idea of my project. Many advanced basketball rating systems (like KenPom or BartTorvik) use Offensive Efficiency and Defensive Efficiency to predict team performance, but I believed that having ratings for only offense and defense was losing valuable information about how teams might match up against one another. Maybe the predictive power of one team rebounding well will be magnified against an opponent that rebounds poorly, or maybe the two effects will be mitigating because there can only be so many rebound opportunities per game. Maybe a team's strong shooting percentage numbers will be compounded by a team that allows high shooting percentages, or maybe the good shooting is more important in matchups against teams that turn the ball over and give up a higher number of shots. Most pressingly, how do all of these interactions change when a good team plays a bad team?
 
