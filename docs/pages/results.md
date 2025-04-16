@@ -8,12 +8,13 @@ permalink: /results/
 ## Predictions for the 2025 Tournament
 
 
-Enter a team name to look up their win probability docs assets 517:
+Enter a team name to look up their win probability docs assets 519:
 
 <input type="text" id="teamInput" placeholder="Enter team name">
 <button id="lookupButton">Lookup</button>
 <p id="result">Waiting for input...</p>
 
+{% raw %}
 <script>
 let data = [];
 
@@ -70,3 +71,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 </script>
+{% endraw %}
