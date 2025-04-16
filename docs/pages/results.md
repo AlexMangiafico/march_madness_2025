@@ -33,9 +33,11 @@ Finally! Choose two teams and a location for the game to be played!
 
 <script src="/march_madness_2025/assets/js/lookup.js"></script>
 
-What does that mean for 2025 March Madness?
+What does that mean for 2025 March Madness? It means probabilities for teams progressing through the bracket and advancing to different stages in the tournament.
+
+![Chart](heatmap_Men_2025.png)
+![Chart](heatmap_Women_2025.png)
 
 ![Chart](bracket_Men_2025.png)
 ![Chart](bracket_Women_2025.png)
-![Chart](heatmap_Men_2025.png)
-![Chart](heatmap_Woen_2025.png)
+
