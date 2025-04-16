@@ -10,8 +10,24 @@ permalink: /results/
 
 Enter a team name to look up their win probability docs assets 524:
 
-<input type="text" id="teamInput" placeholder="Enter team name">
-<button onclick="lookupTeam()">Lookup</button>
-<p id="result"></p>
+<body>
+  <h1>Team Prediction Lookup</h1>
+  <label for="team1Input">Team 1: </label>
+  <input type="text" id="team1Input">
+  <br>
+  <label for="team2Input">Team 2: </label>
+  <input type="text" id="team2Input">
+  <br>
+  <label for="locationInput">Location: </label>
+  <input type="text" id="locationInput">
+  <br>
+  <button onclick="lookupPrediction()">Lookup</button>
 
-<script src="/march_madness_2025/assets/js/lookup.js"></script>
+  <p id="result"></p>
+  
+
+
+
+
+  <script src="/march_madness_2025/assets/js/lookup.js"></script>
+</body>
