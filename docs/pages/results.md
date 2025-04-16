@@ -34,3 +34,8 @@ Finally! Choose two teams and a location for the game to be played!
 <script src="/march_madness_2025/assets/js/lookup.js"></script>
 
 What does that mean for 2025 March Madness?
+
+![Chart](bracket_Men_2025.png)
+![Chart](bracket_Women_2025.png)
+![Chart](heatmap_Men_2025.png)
+![Chart](heatmap_Woen_2025.png)
