@@ -6,60 +6,25 @@ permalink: /performance/
 
 ## Comparing Predictions to Actual Results
 
-Now that the **2025 NCAA Tournament** has concluded, it's time to analyze how well our **logistic regression model** performed. We’ll compare:
-- **Pre-Tournament Win Probabilities vs. Actual Outcomes**
-- **Bracket Performance Metrics**
-- **Key Hits & Misses** in Our Predictions
+Now that the 2025 NCAA Tournament has concluded, it's time to analyze how well my model performed. One of the chalkiest tournaments in recent memory presents problems evaluating performance, but the reality of the situation is that the small number of postseason games means there will be a lot of variance. ALl of the chalk was pretty good for my model, which consistently picked favorites with more certainty than betting markets and other models. This was good for a 178th place finish in the March Machine Learning Mania competition on Kaggle
 
----
+https://www.kaggle.com/competitions/march-machine-learning-mania-2025/leaderboard
 
-## Model Accuracy and Metrics
 
-We evaluate our model’s performance using the following key metrics:
 
-| Metric                | Score  |
-|-----------------------|--------|
-| Overall Accuracy     | **XX%** |
-| Log Loss            | **X.XX** |
-| Brier Score        | **X.XX** |
-| Bracket Performance | **Top X% of ESPN entries** |
 
-- **Accuracy**: The percentage of correctly predicted game winners.
-- **Log Loss**: Measures how well our probability estimates matched actual outcomes (lower is better).
-- **Brier Score**: Evaluates the calibration of our probability predictions.
-- **Bracket Performance**: Where our bracket ranked among public contests.
+### Hits: Where the Model Got It Right
 
----
+I got a couple
 
-## Key Insights from Tournament Performance
+### Misses: Where the Model Fell Short
 
-### Hits: Where the Model Got It Right ✅
+My biggest miss on the men's side was Drake's first round upset of Missouri where I gave Missouri a 78% chance to win. Other models predicted Missouri around 67%.
+On the women's side, I gave Oklahoma State 81% chance to beat South Dakota State in the first round, compared to a 67% average prediction from Kaggle experts.
 
-1. **Cinderella Predictions**
-   - Our model flagged **[Team X] (Seed #X)** as a strong upset candidate, giving them a **Y%** chance to win their first-round game—significantly higher than public consensus. They advanced to the **Sweet 16**.
-   - Another lower-seeded team, **[Team Y]**, was identified as undervalued in offensive efficiency. They pulled off multiple wins before falling in the **Elite Eight**.
 
-2. **Overrated High Seeds**
-   - The model **downgraded [Team Z]**, a #2 seed, due to weak defensive efficiency metrics. They were eliminated in the **Round of 32**, aligning with our lower-than-expected win probability.
-   - **Another high seed**, [Team A], was predicted to struggle against a **high-tempo, three-point shooting opponent**—which proved accurate.
 
-3. **Final Four Projections**
-   - The model correctly identified **X out of 4** Final Four teams.
-   - Our **most probable champion** reached the title game, demonstrating strong predictive power.
 
----
-
-### Misses: Where the Model Fell Short ❌
-
-1. **Underrating a Surprise Team**
-   - **[Team B]**, a lower seed, made a deep run despite low predicted odds. The model **undervalued** their defensive adjustments and late-season performance surge.
-   - This suggests a need to incorporate **momentum factors or late-season performance trends**.
-
-2. **Unexpected Early Exits**
-   - The model **overestimated** the chances of **[Team C]**, a top-ranked team, advancing to the Final Four. A key injury and poor shooting performance led to an **early exit**.
-   - This highlights the difficulty of accounting for **in-game variability and injuries** in pre-tournament models.
-
----
 
 ## Bracket Performance Visualization
 
