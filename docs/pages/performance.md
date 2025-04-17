@@ -15,15 +15,16 @@ https://www.kaggle.com/competitions/march-machine-learning-mania-2025/leaderboar
 
 ### Hits: Where the Model Got It Right
 
-I got a couple
+My biggest hits mostly came when I assigned 
 
 ### Misses: Where the Model Fell Short
 
+My model 
 My biggest miss on the men's side was Drake's first round upset of Missouri where I gave Missouri a 78% chance to win. Other models predicted Missouri around 67%.
 On the women's side, I gave Oklahoma State 81% chance to beat South Dakota State in the first round, compared to a 67% average prediction from Kaggle experts.
 
 
-
+[March Madness Machine Learning Mania](https://www.kaggle.com/competitions/march-machine-learning-mania-2025)
 
 
 ## Bracket Performance Visualization
