@@ -4,7 +4,7 @@ title: "March Madness 2025"
 permalink: /
 cover: true
 show_related_posts: false
-selected_posts:
+selected_posts:[]
 featured: false
 ---
 
