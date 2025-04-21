@@ -1,5 +1,5 @@
 ---
-layout: welcome
+layout: home
 title: "March Madness 2025"
 permalink: /
 cover: true
